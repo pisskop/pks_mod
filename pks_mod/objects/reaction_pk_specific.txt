@@ -1,0 +1,237 @@
+reaction_pk_specific
+
+[OBJECT:REACTION]
+*Im not sure if I can make 2 reagents within a reaction the be same without forcing them this way.
+
+***************
+***************
+
+	[REACTION:GOUSSET_ADD_COPPER]		-combines gousset sets and unfinished armor to create a chestplate-
+		[CATEGORY:CHESTPLATE_CREATE]
+		[CATEGORY_NAME:create a chestplate]
+		[NAME:reinforce an unfinished copper chestplate with goussets.]
+		[BUILDING:CRAFTSMAN:NONE]
+		[SKILL:LEATHERWORK]				-does not involve forging, does involve fitting leather and materials together-
+		[REAGENT:A:1:TOOL:ITEM_TOOL_ARMOR_INCOMPLETE:METAL:COPPER]
+		[REAGENT:copper goussets:1:TOOL:ITEM_TOOL_GOUSSET:METAL:COPPER]
+		[REAGENT:C:1:BAG:NONE:NONE:NONE[CONTAINS:copper goussets][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+		[REAGENT:D:1:SKIN_TANNED:NONE:NONE:NONE]
+		[PRODUCT:100:1:ARMOR:ITEM_ARMOR_CHESTPLATE:GET_MATERIAL_FROM_REAGENT:A:NONE]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:joins the goussets to the unfinished armor, completing it and extending its coverage to the elow and covering the neck.  Consumes a tanned hide.]
+
+	[REACTION:GOUSSET_ADD_BRONZE]
+		[CATEGORY:CHESTPLATE_CREATE]
+		[NAME:reinforce an unfinished bronze chestplate with goussets.]
+		[BUILDING:CRAFTSMAN:NONE]
+		[SKILL:LEATHERWORK]				-does not involve forging, does involve fitting leather and materials together-
+		[REAGENT:A:1:TOOL:ITEM_TOOL_ARMOR_INCOMPLETE:METAL:BRONZE]
+		[REAGENT:bronze goussets:1:TOOL:ITEM_TOOL_GOUSSET:METAL:BRONZE]
+		[REAGENT:C:1:BAG:NONE:NONE:NONE[CONTAINS:bronze goussets][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+		[REAGENT:D:1:SKIN_TANNED:NONE:NONE:NONE]
+		[PRODUCT:100:1:ARMOR:ITEM_ARMOR_CHESTPLATE:GET_MATERIAL_FROM_REAGENT:A:NONE]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:joins the goussets to the unfinished armor, completing it and extending its coverage to the elow and covering the neck.  Consumes a tanned hide.]
+
+	[REACTION:GOUSSET_ADD_BISMUTH]
+		[CATEGORY:CHESTPLATE_CREATE]
+		[NAME:reinforce an unfinished bismuth chestplate with goussets.]
+		[BUILDING:CRAFTSMAN:NONE]
+		[SKILL:LEATHERWORK]				-does not involve forging, does involve fitting leather and materials together-
+		[REAGENT:A:1:TOOL:ITEM_TOOL_ARMOR_INCOMPLETE:METAL:BISMUTH]
+		[REAGENT:bismuth goussets:1:TOOL:ITEM_TOOL_GOUSSET:METAL:BISMUTH]
+		[REAGENT:C:1:BAG:NONE:NONE:NONE[CONTAINS:bismuth goussets][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+		[REAGENT:D:1:SKIN_TANNED:NONE:NONE:NONE]
+		[PRODUCT:100:1:ARMOR:ITEM_ARMOR_CHESTPLATE:GET_MATERIAL_FROM_REAGENT:A:NONE]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:joins the goussets to the unfinished armor, completing it and extending its coverage to the elow and covering the neck.  Consumes a tanned hide.]
+
+	[REACTION:GOUSSET_ADD_IRON]
+		[CATEGORY:CHESTPLATE_CREATE]
+		[NAME:reinforce an unfinished iron chestplate with goussets.]
+		[BUILDING:CRAFTSMAN:NONE]
+		[SKILL:LEATHERWORK]				-does not involve forging, does involve fitting leather and materials together-
+		[REAGENT:A:1:TOOL:ITEM_TOOL_ARMOR_INCOMPLETE:METAL:IRON]
+		[REAGENT:iron goussets:1:TOOL:ITEM_TOOL_GOUSSET:METAL:IRON]
+		[REAGENT:C:1:BAG:NONE:NONE:NONE][CONTAINS:iron goussets][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+		[REAGENT:D:1:SKIN_TANNED:NONE:NONE:NONE]
+		[PRODUCT:100:1:ARMOR:ITEM_ARMOR_CHESTPLATE:GET_MATERIAL_FROM_REAGENT:A:NONE]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:joins the goussets to the unfinished armor, completing it and extending its coverage to the elow and covering the neck.  Consumes a tanned hide.]
+
+	[REACTION:GOUSSET_ADD_STEEL]
+		[CATEGORY:CHESTPLATE_CREATE]
+		[NAME:reinforce an unfinished steel chestplate with goussets.]
+		[BUILDING:CRAFTSMAN:NONE]
+		[SKILL:LEATHERWORK]				-does not involve forging, does involve fitting leather and materials together-
+		[REAGENT:A:1:TOOL:ITEM_TOOL_ARMOR_INCOMPLETE:METAL:STEEL]
+		[REAGENT:steel goussets:1:TOOL:ITEM_TOOL_GOUSSET:METAL:STEEL]
+		[REAGENT:C:1:BAG:NONE:NONE:NONE[CONTAINS:steel goussets][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+		[REAGENT:D:1:SKIN_TANNED:NONE:NONE:NONE]
+		[PRODUCT:100:1:ARMOR:ITEM_ARMOR_CHESTPLATE:GET_MATERIAL_FROM_REAGENT:A:NONE]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:joins the goussets to the unfinished armor, completing it and extending its coverage to the elow and covering the neck.  Consumes a tanned hide.]
+
+	[REACTION:GOUSSET_ADD_ADAMANTINE]
+		[CATEGORY:CHESTPLATE_CREATE]
+		[NAME:reinforce an unfinished adamantine chestplate with goussets.]
+		[BUILDING:CRAFTSMAN:NONE]
+		[SKILL:LEATHERWORK]				-does not involve forging, does involve fitting leather and materials together-
+		[REAGENT:A:1:TOOL:ITEM_TOOL_ARMOR_INCOMPLETE:METAL:ADAMANTINE]
+		[REAGENT:adamantine goussets:1:TOOL:ITEM_TOOL_GOUSSET:METAL:ADAMANTINE]
+		[REAGENT:C:1:BAG:NONE:NONE:NONE[CONTAINS:adamantine goussets][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+		[REAGENT:D:1:SKIN_TANNED:NONE:NONE:NONE]
+		[PRODUCT:100:1:ARMOR:ITEM_ARMOR_CHESTPLATE:GET_MATERIAL_FROM_REAGENT:A:NONE]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:joins the goussets to the unfinished armor, completing it and extending its coverage to the elow and covering the neck.  Consumes a tanned hide.]
+
+***************
+***************
+
+	[REACTION:GOUSSET_UNFINISHED_COPPER]			-forge a non-functional chestplate-
+		[CATEGORY:CHESTPLATE_CREATE]
+		[NAME:forge an unfinished copper chestplate]
+		[BUILDING:METALSMITH:NONE]
+		[SKILL:FORGE_ARMOR]
+		[REAGENT:A:450:BAR:NO_SUBTYPE:METAL:COPPER]
+		[PRODUCT:100:1:TOOL:ITEM_TOOL_ARMOR_INCOMPLETE:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:forge a non-functional chestplate that can be fitted with goussets.]
+
+	[REACTION:GOUSSET_UNFINISHED_BRONZE]
+		[CATEGORY:CHESTPLATE_CREATE]
+		[NAME:forge an unfinished bronze chestplate]
+		[BUILDING:METALSMITH:NONE]
+		[SKILL:FORGE_ARMOR]
+		[REAGENT:A:450:BAR:NO_SUBTYPE:METAL:BRONZE]
+		[PRODUCT:100:1:TOOL:ITEM_TOOL_ARMOR_INCOMPLETE:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:forge a non-functional chestplate that can be fitted with goussets.]
+
+	[REACTION:GOUSSET_UNFINISHED_BISMUTH]
+		[CATEGORY:CHESTPLATE_CREATE]
+		[NAME:forge an unfinished bismuth chestplate]
+		[BUILDING:METALSMITH:NONE]
+		[SKILL:FORGE_ARMOR]
+		[REAGENT:A:450:BAR:NO_SUBTYPE:METAL:BISMUTH]
+		[PRODUCT:100:1:TOOL:ITEM_TOOL_ARMOR_INCOMPLETE:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:forge a non-functional chestplate that can be fitted with goussets.]
+
+	[REACTION:GOUSSET_UNFINISHED_IRON]
+		[CATEGORY:CHESTPLATE_CREATE]
+		[NAME:forge an unfinished iron chestplate]
+		[BUILDING:METALSMITH:NONE]
+		[SKILL:FORGE_ARMOR]
+		[REAGENT:A:450:BAR:NO_SUBTYPE:METAL:IRON]
+		[PRODUCT:100:1:TOOL:ITEM_TOOL_ARMOR_INCOMPLETE:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+		[ADVENTURE_MODE_ENABLED]
+		[CATEGORY:CHESTPLATE_CREATE]
+		[DESCRIPTION:forge a non-functional chestplate that can be fitted with goussets.]
+
+	[REACTION:GOUSSET_UNFINISHED_STEEL]
+		[NAME:forge an unfinished steel chestplate]
+		[BUILDING:METALSMITH:NONE]
+		[CATEGORY:CHESTPLATE_CREATE]
+		[SKILL:FORGE_ARMOR]
+		[REAGENT:A:450:BAR:NO_SUBTYPE:METAL:STEEL]
+		[PRODUCT:100:1:TOOL:ITEM_TOOL_ARMOR_INCOMPLETE:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:forge a non-functional chestplate that can be fitted with goussets.]
+
+	[REACTION:GOUSSET_UNFINISHED_ADAMANTINE]
+		[CATEGORY:CHESTPLATE_CREATE]
+		[NAME:forge an unfinished adamantine chestplate]
+		[BUILDING:METALSMITH:NONE]
+		[SKILL:FORGE_ARMOR]
+		[REAGENT:A:450:BAR:NO_SUBTYPE:METAL:ADAMANTINE]
+		[PRODUCT:100:1:TOOL:ITEM_TOOL_ARMOR_INCOMPLETE:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:forge a non-functional chestplate that can be fitted with goussets.]
+
+***************
+***************
+
+	[REACTION:GOUSSET_MAKE_COPPER]			-craft the gousset out of metal, using some thread-
+		[CATEGORY:CHESTPLATE_CREATE]
+		[NAME:forge a complete set of copper goussets]
+		[BUILDING:METALSMITH:NONE]
+		[SKILL:FORGE_ARMOR]
+		[REAGENT:A:150:BAR:NO_SUBTYPE:METAL:COPPER]			-150 is the size of 1 bar-
+		[REAGENT:B:15000:THREAD:NONE:NONE:NONE]				-15k is 1 thread's worth of thread.  unsure if this will accept adamantine, might have to specify 3 reactions to avoid that-
+		[REAGENT:C:1:BAG:NONE:NONE:NONE]
+			[EMPTY][PRESERVE_REAGENT][EMPTY][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+		[PRODUCT:100:1:TOOL:ITEM_TOOL_GOUSSET:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+			[PRODUCT_DIMENSION:150][PRODUCT_TO_CONTAINER:C]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:create a series of small copper plates and coverings to add to an unfinished armor chestplate.]
+
+	[REACTION:GOUSSET_MAKE_BRONZE]
+		[CATEGORY:CHESTPLATE_CREATE]
+		[NAME:forge a complete set of bronze goussets]
+		[BUILDING:METALSMITH:NONE]
+		[SKILL:FORGE_ARMOR]
+		[REAGENT:A:150:BAR:NO_SUBTYPE:METAL:NONE]			-150 is the size of 1 bar-
+		[REAGENT:B:15000:THREAD:NONE:NONE:NONE]				-15k is 1 thread's worth of thread.  unsure if this will accept adamantine, might have to specify 3 reactions to avoid that-
+		[REAGENT:C:1:BAG:NONE:NONE:NONE]
+			[EMPTY][PRESERVE_REAGENT][EMPTY][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+		[PRODUCT:100:1:TOOL:ITEM_TOOL_GOUSSET:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+			[PRODUCT_DIMENSION:150][PRODUCT_TO_CONTAINER:C]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:create a series of small bronze plates and coverings to add to an unfinished armor chestplate.]
+
+	[REACTION:GOUSSET_MAKE_BISMUTH]
+		[CATEGORY:CHESTPLATE_CREATE]
+		[NAME:forge a complete set of bismuth goussets]
+		[BUILDING:METALSMITH:NONE]
+		[SKILL:FORGE_ARMOR]
+		[REAGENT:A:150:BAR:NO_SUBTYPE:METAL:BISMUTH]			-150 is the size of 1 bar-
+		[REAGENT:B:15000:THREAD:NONE:NONE:NONE]				-15k is 1 thread's worth of thread.  unsure if this will accept adamantine, might have to specify 3 reactions to avoid that-
+		[REAGENT:C:1:BAG:NONE:NONE:NONE]
+			[EMPTY][PRESERVE_REAGENT][EMPTY][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+		[PRODUCT:100:1:TOOL:ITEM_TOOL_GOUSSET:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+			[PRODUCT_DIMENSION:150][PRODUCT_TO_CONTAINER:C]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:create a series of small bismuth plates and coverings to add to an unfinished armor chestplate.]
+
+	[REACTION:GOUSSET_MAKE_IRON]
+		[CATEGORY:CHESTPLATE_CREATE]
+		[NAME:forge a complete set of iron goussets]
+		[BUILDING:METALSMITH:NONE]
+		[SKILL:FORGE_ARMOR]
+		[REAGENT:A:150:BAR:NO_SUBTYPE:METAL:IRON]			-150 is the size of 1 bar-
+		[REAGENT:B:15000:THREAD:NONE:NONE:NONE]				-15k is 1 thread's worth of thread.  unsure if this will accept adamantine, might have to specify 3 reactions to avoid that-
+		[REAGENT:C:1:BAG:NONE:NONE:NONE]
+			[EMPTY][PRESERVE_REAGENT][EMPTY][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+		[PRODUCT:100:1:TOOL:ITEM_TOOL_GOUSSET:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+			[PRODUCT_DIMENSION:150][PRODUCT_TO_CONTAINER:C]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:create a series of small iron plates and coverings to add to an unfinished armor chestplate.]
+
+	[REACTION:GOUSSET_MAKE_STEEL]
+		[CATEGORY:CHESTPLATE_CREATE]
+		[NAME:forge a complete set of steel goussets]
+		[BUILDING:METALSMITH:NONE]
+		[SKILL:FORGE_ARMOR]
+		[REAGENT:A:150:BAR:NO_SUBTYPE:METAL:STEEL]			-150 is the size of 1 bar-
+		[REAGENT:B:15000:THREAD:NONE:NONE:NONE]				-15k is 1 thread's worth of thread.  unsure if this will accept adamantine, might have to specify 3 reactions to avoid that-
+		[REAGENT:C:1:BAG:NONE:NONE:NONE]
+			[EMPTY][PRESERVE_REAGENT][EMPTY][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+		[PRODUCT:100:1:TOOL:ITEM_TOOL_GOUSSET:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+			[PRODUCT_DIMENSION:150][PRODUCT_TO_CONTAINER:C]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:create a series of small steel plates and coverings to add to an unfinished armor chestplate.]
+
+	[REACTION:GOUSSET_MAKE_ADAMANTINE]
+		[CATEGORY:CHESTPLATE_CREATE]
+		[NAME:forge a complete set of adamantine goussets]
+		[BUILDING:METALSMITH:NONE]
+		[SKILL:FORGE_ARMOR]
+		[REAGENT:A:150:BAR:NO_SUBTYPE:METAL:ADAMANTINE]			-150 is the size of 1 bar-
+		[REAGENT:B:15000:THREAD:NONE:NONE:NONE]				-15k is 1 thread's worth of thread.  unsure if this will accept adamantine, might have to specify 3 reactions to avoid that-
+		[REAGENT:C:1:BAG:NONE:NONE:NONE]
+			[EMPTY][PRESERVE_REAGENT][EMPTY][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+		[PRODUCT:100:1:TOOL:ITEM_TOOL_GOUSSET:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+			[PRODUCT_DIMENSION:150][PRODUCT_TO_CONTAINER:C]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:create a series of small adamantine plates and coverings to add to an unfinished armor chestplate.]

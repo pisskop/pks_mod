@@ -1,0 +1,15 @@
+entity_pk_default_cull
+
+
+*With the new 50.xx tools, we can just snip out the defaults and repalce them with our own, preserving the vanilla files in their pristine glory.*
+
+[OBJECT:ENTITY]
+
+
+-SELECT_ENTITY:MOUNTAIN-			-not needed to simply cut the whole thing out-
+[CUT_ENTITY:MOUNTAIN]
+[CUT_ENTITY:FOREST]
+[CUT_ENTITY:PLAINS]
+[CUT_ENTITY:FOREST]
+[CUT_ENTITY:EVIL]
+[CUT_ENTITY:SUBTERRANEAN_ANIMAL_PEOPLES]

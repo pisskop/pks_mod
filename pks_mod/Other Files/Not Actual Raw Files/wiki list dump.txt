@@ -1,0 +1,258 @@
+Useful Wiki Information and Lists
+- This is a collection of spheres, token lists, and explainations.  Or might be one day.
+
+
+***************************
+**************************
+**************************
+GENERAL TIPS
+
+
+- The adder snake is the smallest non-vermin, 150.  2nd is the weasal, 200.  3rd is the kestrel, 200.  4th is the stoat, 350.  5th is grey parrot, 400.  Noted such so when dealing with small animals.-
+- Vermin larger than 600: Lion tamarin, 620.  Hedgehog, 800.  Cave fish, 1000.  Creepy Crawler, 1000.  Cuttlefish, 1000.  Fire snake, 1000.  Knuckle worm, 1000.  Purring maggot, 1000.  Phantom Spider, 1000.  Two-legged rhino lizard, 1000.  Fluffy wambler, 2000.-  Fox squirrel, 2000.
+
+- rcp body parts can be used in standard creature templates-
+
+- [select] allows you to pull up a raw token without presenting the whole list of tokens.  ie, [select_creature:dwarf] pulls the dwarf creature up.-
+- [cut] allows you to force the game to not use a defined raw token.  [CUT_ITEM:ITEM_HELM_HELM] removes helmets.-
+- A list of the objects the wiki says can be called upon using the above:  CREATURE, ENTITY, INTERACTION, ITEM, WORD, TRANSLATION, SYMBOL, INORGANIC, PLANT, MUSIC, SOUND, REACTION-
+
+***************************
+**************************
+**************************
+UNDERUSED TAGS/TOKENS
+
+[RETRACT_INTO_BP:BY_CATEGORY:SHELL:roll into a ball:rolls into a ball:unroll:unrolls]	-ex: armadillos will retact (forced, all?) of their body into their shell, not moving or attacking but forcing all attacks to be made on that BP-
+[TRADE_CAPACITY:15000]		-amount of goods, presumably in urist-pounds, a critter can carry for the purpose of trade.  Found primarily on wagons.
+[SPECIFIC_FOOD:PLANT:BAMBOO, ARROW]		-denotes that this (and any other food explicitly named in the raw) is the only food they can eat.  I dont immediately know it the arguements accept categories or (ALL) (ex:INORGANIC:ALL) for a rock-eating mineral-man.-
+[GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]	-in this ex: a tiger man's claw tissue is referenced so that it can be modified further --> (TISSUE_LAYER:BY_CATEGORY:FINGER:CLAW:FRONT).  This gives use the familiar 'use material, define location' formula.
+[CAN_DO_INTERACTION:MATERIAL_EMISSION_WITH_HIDE_EFFECT]	-ie: octopus can squirt ink and then turn invisible until spotted again-
+[VIEWRANGE:20]		-probably how far the animal can see.  Ala adventure mode LoS.  20 is default, I imagine playing as a creature with more or less adjusts the range of vison accoringly.-
+[VISION_ARC:60:20]		-the range of vision (adventure mode mostly) that an animal has.  first number is binocular vision, second is monocular.  exact effects unknown, propably for stealth in both modes.  This is dereees, 0-360-
+
+***************************
+**************************
+**************************
+MOST COMMON METALS/WEAPONS/ARMOR
+
+wood
+shell
+leather
+bone
+obsidian
+copper				INORGANIC:COPPER
+bronze				INORGANIC:BRONZE
+bismuth bronze		INORGANIC:BISMUTH
+silver				INORGANIC:SILVER
+crystal glass
+clear glass
+green glass
+iron				INORGANIC:IRON
+steel				INORGANIC:STEEL
+divine
+adamantine			INORGANIC:ADAMANTINE
+
+***************************
+**************************
+**************************
+
+PERSONALITY CREATURE TOKENS
+
+	-PERSONALITY:SWAYED_BY_EMOTIONS:0:50:100- min/median/max. Organized into 5 brackets: (0-20, 20-40, 40-60, 60-80, 80-100).  The +- 10 point range around median has ~72% chance to be rolled.
+
+	LOVE_PROPENSITY
+	HATE_PROPENSITY
+	ENVY_PROPENSITY
+	CHEER_PROPENSITY
+	DEPRESSION_PROPENSITY
+	ANGER_PROPENSITY
+	ANXIETY_PROPENSITY
+	LUST_PROPENSITY
+	STRESS_VULNERABILITY
+	GREED
+	IMMODERATION
+	VIOLENT
+	PERSEVERANCE
+	WASTEFULNESS
+	DISCORD
+	FRIENDLINESS
+	POLITENESS
+	DISDAIN_ADVICE
+	BRAVERY
+	CONFIDENCE
+	VANITY
+	AMBITION
+	GRATITUDE
+	IMMODESTY
+	HUMOR
+	VENGEFUL
+	PRIDE
+	CRUELTY
+	SINGLEMINDED
+	HOPEFUL
+	CURIOUS
+	BASHFUL
+	PRIVACY
+	PERFECTIONIST
+	CLOSEMINDED
+	TOLERANT
+	EMOTIONALLY_OBSESSIVE
+	SWAYED_BY_EMOTIONS
+	ALTRUISM
+	DUTIFULNESS
+	THOUGHTLESSNESS
+	ORDERLINESS
+	TRUST
+	ASSERTIVENESS
+	ACTIVITY_LEVEL
+	EXCITEMENT_SEEKING
+	IMAGINATION
+	ABSTRACT_INCLINED
+	ART_INCLINED
+
+
+***************************
+**************************
+**************************
+
+SPHERES
+
+*Defines a creatures alignment into sphere in the case that it is worshipped or has the power tag.
+*Defines an entitys tendency to worship gods and creatures of a given sphere -SPHERE_ALIGNMENT:WAR:512- where the number specifies a tendency to do so.
+
+
+	AGRICULTURE
+	ANIMALS
+	ART
+	BALANCE
+	BEAUTY
+	BIRTH
+	BLIGHT
+	BOUNDARIES
+	CAVERNS
+	CHAOS
+	CHARITY
+	CHILDREN
+	COASTS
+	CONSOLATION
+	COURAGE
+	CRAFTS
+	CREATION
+	DANCE
+	DARKNESS
+	DAWN
+	DAY
+	DEATH
+	DEFORMITY
+	DEPRAVITY
+	DISCIPLINE
+	DISEASE
+	DREAMS
+	DUSK
+	DUTY
+	EARTH
+	FAMILY
+	FAME
+	FATE
+	FERTILITY
+	FESTIVALS
+	FIRE
+	FISH
+	FISHING
+	FOOD
+	FORGIVENESS
+	FORTRESSES
+	FREEDOM
+	GAMBLING
+	GAMES
+	GENEROSITY
+	HAPPINESS
+	HEALING
+	HOSPITALITY
+	HUNTING
+	INSPIRATION
+	JEALOUSY
+	JEWELS
+	JUSTICE
+	LABOR
+	LAKES
+	LAWS
+	LIES
+	LIGHT
+	LIGHTNING
+	LONGEVITY
+	LOVE
+	LOYALTY
+	LUCK
+	LUST
+	MARRIAGE
+	MERCY
+	METALS
+	MINERALS
+	MISERY
+	MIST
+	MOON
+	MOUNTAINS
+	MUCK
+	MURDER
+	MUSIC
+	NATURE
+	NIGHT
+	NIGHTMARES 
+	OATHS
+	OCEANS
+	ORDER
+	PAINTING
+	PEACE
+	PERSUASION
+	PLANTS
+	POETRY
+	PREGNANCY
+	RAIN
+	RAINBOWS
+	REBIRTH
+	REVELRY
+	REVENGE
+	RIVERS
+	RULERSHIP
+	RUMORS
+	SACRIFICE
+	SALT
+	SCHOLARSHIP
+	SEASONS
+	SILENCE
+	SKY
+	SONG
+	SPEECH
+	STARS
+	STORMS
+	STRENGTH
+	SUICIDE
+	SUN
+	THEFT
+	THRALLDOM
+	THUNDER
+	TORTURE
+	TRADE
+	TRAVELERS
+	TREACHERY
+	TREES
+	TRICKERY
+	TRUTH
+	TWILIGHT
+	VALOR
+	VICTORY
+	VOLCANOS
+	WAR
+	WATER
+	WEALTH
+	WEATHER
+	WIND
+	WISDOM
+	WRITING
+	YOUTH
+
+***************************
+**************************
+**************************
+

@@ -1,0 +1,191 @@
+body_default_pk_new
+
+[OBJECT:BODY]
+
+
+[BODYGLOSS:WOOD_TAIL:tail:branch:tails:branches]
+[BODYGLOSS:PROBOSCIS:proboscis:snout:proboscises:snouts]		-slug snout, a boar-
+[BODYGLOSS:INSECT_FINGER:finger:stea:fingerss:setae]
+[BODYGLOSS:INSECT_FOOT:foot:tarsus:feet:tarsi]
+[BODYGLOSS:INSECT_HAND:hand:grasper:hands:graspers]
+
+
+[BODY:LOWER_FANG_TEETH]																							-my first adventure into body_templates.  I think its a little excessive now lol.-
+	[BP:U_F_TOOTH:upper front tooth:upper front teeth][CONTYPE:HEAD][CATEGORY:MOUTH][NUMBER:9][SOCKET][SMALL]
+		[DEFAULT_RELSIZE:4]
+		[INDIVIDUAL_NAME:upper center eye tooth:STP]
+		[INDIVIDUAL_NAME:upper right incisor:STP]
+		[INDIVIDUAL_NAME:upper left incisor:STP]
+		[INDIVIDUAL_NAME:upper right eye tooth:STP]
+		[INDIVIDUAL_NAME:upper left eye tooth:STP]
+		[INDIVIDUAL_NAME:first upper right canine:STP]
+		[INDIVIDUAL_NAME:first upper left canine:STP]
+		[INDIVIDUAL_NAME:second upper right canine:STP]
+		[INDIVIDUAL_NAME:second upper left canine:STP]
+	[BP:L_F_TOOTH:lower front tooth:lower front teeth][CONTYPE:HEAD][CATEGORY:TOOTH][NUMBER:2][SOCKET][SMALL]
+		[DEFAULT_RELSIZE:20]
+		[INDIVIDUAL_NAME:lower right incisor:STP]
+		[INDIVIDUAL_NAME:lower left incisor:STP]
+	[BP:U_R_B_TOOTH:upper right back tooth:upper right back teeth][CONTYPE:HEAD][CATEGORY:TOOTH][NUMBER:6][SOCKET][SMALL]
+		[DEFAULT_RELSIZE:14]
+		[INDIVIDUAL_NAME:first upper back right canine:STP]
+		[INDIVIDUAL_NAME:second upper back right canine:STP]
+		[INDIVIDUAL_NAME:third upper right canine:STP]
+		[INDIVIDUAL_NAME:first upper back right incissor:STP]
+		[INDIVIDUAL_NAME:second upper back right incisor:STP]
+		[INDIVIDUAL_NAME:upper right molar:STP]
+	[BP:L_R_B_TOOTH:lower right back tooth:lower right back teeth][CONTYPE:HEAD][CATEGORY:TOOTH][NUMBER:6][SOCKET][SMALL]
+		[DEFAULT_RELSIZE:4]
+		[INDIVIDUAL_NAME:first lower back right incisor:STP]
+		[INDIVIDUAL_NAME:second lower back rightincisor:STP]
+		[INDIVIDUAL_NAME:third lower back right incisor:STP]
+		[INDIVIDUAL_NAME:first lower back right canine:STP]
+		[INDIVIDUAL_NAME:secend lower back right canine:STP]
+		[INDIVIDUAL_NAME:secondlower back right Molar:STP]
+	[BP:U_L_B_TOOTH:upper left back tooth:upper left back teeth][CONTYPE:HEAD][CATEGORY:TOOTH][NUMBER:6][SOCKET][SMALL]
+		[DEFAULT_RELSIZE:6]
+		[INDIVIDUAL_NAME:first upper back left canine:STP]
+		[INDIVIDUAL_NAME:second upper back left canine:STP]
+		[INDIVIDUAL_NAME:third upper left canine:STP]
+		[INDIVIDUAL_NAME:first upper back left incissor:STP]
+		[INDIVIDUAL_NAME:second upper back left incisor:STP]
+		[INDIVIDUAL_NAME:upper left molar:STP]
+	[BP:L_L_B_TOOTH:lower left back tooth:lower left back teeth][CONTYPE:HEAD][CATEGORY:TOOTH][NUMBER:6][SOCKET][SMALL]
+		[DEFAULT_RELSIZE:4]
+		[INDIVIDUAL_NAME:first lower back left incisor:STP]
+		[INDIVIDUAL_NAME:second lower back leftincisor:STP]
+		[INDIVIDUAL_NAME:third lower back left incisor:STP]
+		[INDIVIDUAL_NAME:first lower back left canine:STP]
+		[INDIVIDUAL_NAME:second lower back left canine:STP]
+		[INDIVIDUAL_NAME:secondlower back left Molar:STP]
+	[BP:L_R_FANG:right fang:right fangs][CONTYPE:HEAD][CATEGORY:TOOTH][SKELETON][SMALL][SOCKET]
+		[DEFAULT_RELSIZE:15]
+	[BP:L_L_FANG:left fang:left fangs][CONTYPE:HEAD][CATEGORY:TOOTH][SKELETON][SMALL][SOCKET]
+		[DEFAULT_RELSIZE:15]
+
+[BODY:6HEAD_HORN_NUMBERED]
+	[BP:RHORN:first right crown horn:STP][CONTYPE:HEAD][RIGHT][SMALL][SKELETON][CATEGORY:HORN]
+		[DEFAULT_RELSIZE:100]
+	[BP:LHORN:first left crown horn:STP][CONTYPE:HEAD][LEFT][SMALL][SKELETON][CATEGORY:HORN]
+		[DEFAULT_RELSIZE:100]
+	[BP:RHORN:second right crown horn:STP][CONTYPE:HEAD][RIGHT][SMALL][SKELETON][CATEGORY:HORN]
+		[DEFAULT_RELSIZE:80]
+	[BP:LHORN:second left crown horn:STP][CONTYPE:HEAD][LEFT][SMALL][SKELETON][CATEGORY:HORN]
+		[DEFAULT_RELSIZE:80]
+	[BP:RHORN:right temple horn:STP][CONTYPE:HEAD][RIGHT][SMALL][SKELETON][CATEGORY:HORN]
+		[DEFAULT_RELSIZE:60]
+	[BP:LHORN:left temple horn:STP][CONTYPE:HEAD][LEFT][SMALL][SKELETON][CATEGORY:HORN]
+		[DEFAULT_RELSIZE:60]
+
+[BODY:2CHIN_HORN]
+	[BP:RHORN:right chin horn:STP][CONTYPE:HEAD][RIGHT][SMALL][SKELETON][CATEGORY:HORN]
+		[DEFAULT_RELSIZE:50]
+	[BP:LHORN:left chin horn:STP][CONTYPE:HEAD][LEFT][SMALL][SKELETON][CATEGORY:HORN]
+		[DEFAULT_RELSIZE:50]
+
+[BODY:TAIL_GRASP]
+	[BP:TAIL:tail:STP][CONTYPE:LOWERBODY][GRASP][CATEGORY:TAIL]
+		[DEFAULT_RELSIZE:400]
+
+[BODY:6_ROOTS]
+	[BP:RF:rear right root cluster:STP][CONTYPE:LOWERBODY][STANCE][RIGHT][CATEGORY:FOOT]
+		[DEFAULT_RELSIZE:500]
+	[BP:RF:lower right root cluster:STP][CONTYPE:LOWERBODY][STANCE][RIGHT][CATEGORY:FOOT]
+		[DEFAULT_RELSIZE:500]
+	[BP:RF:center right root cluster:STP][CONTYPE:LOWERBODY][STANCE][RIGHT][CATEGORY:FOOT]
+		[DEFAULT_RELSIZE:400]
+	[BP:LF:rear left root cluster:STP][CONTYPE:LOWERBODY][STANCE][LEFT][CATEGORY:FOOT]
+		[DEFAULT_RELSIZE:500]
+	[BP:LF:lower left root cluster:STP][CONTYPE:LOWERBODY][STANCE][LEFT][CATEGORY:FOOT]
+		[DEFAULT_RELSIZE:500]
+	[BP:LF:center left root cluster:STP][CONTYPE:LOWERBODY][STANCE][LEFT][CATEGORY:FOOT]
+		[DEFAULT_RELSIZE:400]
+
+[BODY:3EYESTALKS]
+	[BP:REYE:right eyestalk:STP][CON:UB][SIGHT][SMALL][SOCKET][RIGHT][CATEGORY:EYE]
+		[DEFAULT_RELSIZE:60]
+	[BP:LEYE:left eyestalk:STP][CON:UB][SIGHT][SMALL][SOCKET][LEFT][CATEGORY:EYE]
+		[DEFAULT_RELSIZE:60]
+	[BP:EYE:center eyestalk:STP][CON:UB][SIGHT][SMALL][SOCKET][CATEGORY:EYE]
+		[DEFAULT_RELSIZE:40]
+
+[BODY:PLANT_2PARTBODY]
+	[BP:UB:upper body:upper bodies][UPPERBODY][CATEGORY:BODY_UPPER]
+		[DEFAULT_RELSIZE:2500]
+	[BP:LB:lower body:lower bodies][CON:UB][LOWERBODY][STANCE][CATEGORY:BODY_LOWER]
+		[DEFAULT_RELSIZE:1000]
+
+[BODY:6_NO_CLAW_TENTACLES]
+	[BP:RUT:upper right vine:STP][CONTYPE:UPPERBODY][LIMB][RIGHT][CATEGORY:TENTACLE]
+		[DEFAULT_RELSIZE:300][GRASP]
+	[BP:RUT:center right vine:STP][CONTYPE:LOWERBODY][LIMB][RIGHT][CATEGORY:TENTACLE]
+		[DEFAULT_RELSIZE:360][GRASP]
+	[BP:RUT:lower right vine:STP][CONTYPE:LOWERBODY][LIMB][RIGHT][CATEGORY:TENTACLE]
+		[DEFAULT_RELSIZE:250][GRASP]
+	[BP:LUT:upper left vine:STP][CONTYPE:UPPERBODY][LIMB][LEFT][CATEGORY:TENTACLE]
+		[DEFAULT_RELSIZE:300][GRASP]
+	[BP:LUT:center left vine:STP][CONTYPE:LOWERBODY][LIMB][LEFT][CATEGORY:TENTACLE]
+		[DEFAULT_RELSIZE:360][GRASP]
+	[BP:LUT:lower left vine:STP][CONTYPE:LOWERBODY][LIMB][LEFT][CATEGORY:TENTACLE]
+		[DEFAULT_RELSIZE:250][GRASP]
+
+[BODY:UB_MOUTH]																					-connects to the upper body directly-
+	[BP:MOUTH:jaws:STP][CON:UB][MOUTH][SMALL][EMBEDDED][APERTURE][CATEGORY:MOUTH]
+		[DEFAULT_RELSIZE:1800]
+
+[BODY:CHOMPERS]
+	[BP:TOOTH:tooth:teeth][CON:MOUTH][CATEGORY:TOOTH][NUMBER:28][SMALL]
+		[DEFAULT_RELSIZE:100]
+
+[BODY:WRISTBLADE]																					-a protusion coming out of the lower arm, can be modeled into chitin or bone or whatever and used to attack-
+	[BP:SPINE:forelimb spine:STP][CON_CAT:ARM_LOWER][SMALL][SOCKET][TOTEMABLE][CATEGORY:HORN]		-if this sees more use, I'll mod it into a proper part-
+		[DEFAULT_RELSIZE:80]																		-lower arms are '200', hands are '80' by default-
+
+[BODY:BACKSPINES]
+	[BP:BACKSPINE_LEFT:left spinal plate:STP][LEFT][CON_CAT:SPINE][SKELETON][SOCKET][CATEGORY:HORN]			-there should be 1 for each the neck, upper spine, and lower spine, and an equal number more on the right side-
+		[PREVENTS_PARENT_COLLAPSE][DEFAULT_RELSIZE:100]
+	[BP:BACKSPINE_RIGHT:right spinal plate:STP][RIGHT][CON_CAT:SPINE][SKELETON][SOCKET][CATEGORY:HORN]				-the spine itself is 150-
+		[PREVENTS_PARENT_COLLAPSE][DEFAULT_RELSIZE:100]
+
+[BODY:4WINGS]																						-4 wings, like as in a humanoid fairy or angel-
+	[BP:FRWING:right forewing:STP][CONTYPE:UPPERBODY][LIMB][RIGHT][FLIER][CATEGORY:WING]
+		[DEFAULT_RELSIZE:400]
+	[BP:FLWING:left forewing:STP][CONTYPE:UPPERBODY][LIMB][LEFT][FLIER][CATEGORY:WING]
+		[DEFAULT_RELSIZE:400]
+	[BP:RRWING:right hindwing:STP][CONTYPE:UPPERBODY][LIMB][RIGHT][FLIER][CATEGORY:WING]			-they all connect at one point in the back-
+		[DEFAULT_RELSIZE:250]
+	[BP:RLWING:left hindwing:STP][CONTYPE:UPPERBODY][LIMB][LEFT][FLIER][CATEGORY:WING]
+		[DEFAULT_RELSIZE:250]
+
+[BODY:TONGUE_STICKY]																				-ie a toad tognue-		-tongues attatch directly to the head, as you can see-
+	[BP:TONGUE:tongue:STP][CON:MOUTH][CATEGORY:TONGUE]-SMALL-[LIMB][UNDER_PRESSURE]
+		[DEFAULT_RELSIZE:200]	
+
+
+---
+BPs for the holistc spawn demon.  They circumvent the head's weaknesses.
+---
+
+[BODY:HEART_THOUGHT]																				-holistic spawn-
+	[BP:HEART:heart:STP][CONTYPE:UPPERBODY][CIRCULATION][INTERNAL][HEAD][SMALL][THOUGHT][CATEGORY:HEART]
+		[DEFAULT_RELSIZE:100]
+
+[BODY:BRAIN_NOTHOUGHT]																				-holistic spawn-
+	[BP:BRAIN:brain:STP][CONTYPE:HEAD][INTERNAL][SMALL][CATEGORY:BRAIN]
+		[DEFAULT_RELSIZE:200]
+
+[BODY:BASIC_HEAD_VESTIGIAL]																			-not used by holistic spawn-
+	[BP:HD:head:STP][CONTYPE:UPPERBODY][CATEGORY:HEAD]
+		[DEFAULT_RELSIZE:300]
+
+[BODY:NECK_VESTIGIAL]																				-holistic spawn-
+	[BP:NECK:upper spine:STP][CON_CAT:HEAD][INTERNAL][SMALL][SKELETON][CONNECTOR][CATEGORY:SPINE]
+		[DEFAULT_RELSIZE:100]
+
+[BODY:SPINE_VESTIGIAL]																				-holistic spawn-
+	[BP:UPPERSPINE:middle spine:STP][CONTYPE:UPPERBODY][INTERNAL][SMALL][SKELETON][CATEGORY:SPINE]
+		[DEFAULT_RELSIZE:150]
+	[BP:LOWERSPINE:lower spine:STP][CONTYPE:LOWERBODY][INTERNAL][SMALL][SKELETON][CONNECTOR][CATEGORY:SPINE]
+		[DEFAULT_RELSIZE:150]
+																	-a basic head is 300-
+

@@ -1,0 +1,11 @@
+creature_pk_cull
+
+*we are removing the following default creatures from the game, for the purposes of replacing them with our own version and preserving the vanilla raws*
+
+[OBJECT:CREATURE]
+
+[SELECT_CREATURE:ELF]				-Not needed when youre cutting the whole creature-
+[CUT_CREATURE:ELF]
+
+[SELECT_CREATURE:GOBLIN]
+[CUT_CREATURE:GOBLIN]

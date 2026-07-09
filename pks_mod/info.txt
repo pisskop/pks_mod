@@ -1,0 +1,8 @@
+[ID:PKS_MOD]
+[NAME:pk's mod]
+[NUMERIC_VERSION:3]
+[DISPLAYED_VERSION:1.2.1]
+[EARLIEST_COMPATIBLE_NUMERIC_VERSION:1]
+[EARLIEST_COMPATIBLE_DISPLAYED_VERSION:1.0.1]
+[AUTHOR:pisskop]
+[DESCRIPTION:a mod that aims to switch up the vanilla experience but not deviate from the intended theme.]

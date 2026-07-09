@@ -1,0 +1,321 @@
+creature_pk_edit_agonisms
+
+*small edits to vanilla raws that don't warrent a new creature.  This file focuses on combat and general behavior changes*
+
+[OBJECT:CREATURE]
+
+
+*******************
+***combat edits***
+-these serve to change the combat ability of the animal in question-
+
+
+[SELECT_CREATURE:STRANGLER]				-4 armed evil overland monkey, 40,000 in size-
+	[NATURAL_SKILL:WRESTLING:4]			-stranglers should, you know, strangle-
+
+[SELECT_CREATURE:REACHER]				-evil cavern slenderman looking brother, 60,000 in size-
+	[NATURAL_SKILL:WRESTLING:2]			-honestly its one of the more underwhelming things to find down there-
+
+
+[SELECT_CREATURE:WOLF]					-I dont see why they would make poor hunting companions.  I could see why theyd make poor companions in a war setting, being wild animals.-
+	[TRAINABLE_HUNTING]
+
+
+[SELECT_CREATURE:GIANT_WOLF]			-I dont see why they would make poor hunting companions.  I could see why theyd make poor companions in a war setting, being wild animals.-
+	[TRAINABLE_HUNTING]
+
+
+[SELECT_CREATURE:GRASSHOPPER_MAN]					-I dont think I can make it jump faster, but I can make it slightly faster-		-would remove if found way to improve jump instead-
+	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:691:482:251:1900:2900] 35 kph
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:JUMPING_SPIDER_MAN]					-I dont think I can make it jump faster, but I can make it slightly faster-		-would remove if found way to improve jump instead-
+	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:691:482:251:1900:2900] 35 kph
+	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:2206:1692:1178:585:3400:4900] 15 kph
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:GIANT_TOAD]							-a tongue capable of grabbing an enemy, that is sized to ~67% of the heads mass, and will spill out if cut- 
+	[CV_CONVERT_TAG]
+		[CVCT_MASTER:BODY]
+		[CVCT_TARGET:TONGUE]
+		[CVCT_REPLACEMENT:TONGUE_STICKY]				-the tongue is modeled as a wrestling *limb* rather than something that shoots out and pulls in-
+	[LARGE_PREDATOR]									-toads are infamous for trying to eat snakes and actually eating mice-	-at 3.3x size a dwarf, theyre absolutely on the menu-
+
+
+-SELECT_CREATURE:TOAD_MAN-			
+	-CVCT_REPLACEMENT:TONGUE_STICKY					-at half the size of a dwarf, this tier of creature would use it to grab inappropriately-	-as would all smaller critters-
+
+
+[SELECT_CREATURE:GIANT_GREEN_TREE_FROG]
+	[CV_CONVERT_TAG]
+		[CVCT_MASTER:BODY]
+		[CVCT_TARGET:TONGUE]
+		[CVCT_REPLACEMENT:TONGUE_STICKY]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:TOAD_GIANT_CAVE]
+	[CV_CONVERT_TAG]
+		[CVCT_MASTER:BODY]
+		[CVCT_TARGET:TONGUE]
+		[CVCT_REPLACEMENT:TONGUE_STICKY]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:GIANT_CHAMELEON]
+	[CV_CONVERT_TAG]
+		[CVCT_MASTER:BODY]
+		[CVCT_TARGET:TONGUE]
+		[CVCT_REPLACEMENT:TONGUE_STICKY]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+*******************
+***behavioral edits***
+-these serve to change the behavior of the animal in question-
+
+
+[SELECT_CREATURE:GIANT_BROWN_RECLUSE_SPIDER]		-they spin webs, are giant, should catch giant stuff-
+	[THICKWEB]
+
+
+[SELECT_CREATURE:GIANT_GRASSHOPPER]					-Im not sure they use their kickoff mechanism like this, but I also think its cool to imagine-	
+	[APPLY_CREATURE_VARIATION:KICK_HIGHVEL_ATTACK]
+
+
+[SELECT_CREATURE:GIANT_DRAGONFLY]		-not all giant animals should suddenly find dwarves to be prey, and chase them down, but certainly large predators should find smaller things prey-		-look up videos of opportunistic predation from things like horses-
+	[LARGE_PREDATOR]
+
+
+[SELECT_CREATURE:GIANT_FIREFLY]
+	[LARGE_PREDATOR]
+
+
+[SELECT_CREATURE:GIANT_JUMPING_SPIDER]			-hunting spiders tend to 'stalk' prey by investigating, circling, climbing to a perch; before jumping.-
+	[LARGE_PREDATOR]
+	[VIEWRANGE:12]
+
+
+[SELECT_CREATURE:GIANT_MANTIS]
+	[LARGE_PREDATOR]
+
+
+[SELECT_CREATURE:GIANT_BARK_SCORPION]			-look into your heart you know it to be truth-
+	[LARGE_PREDATOR]
+
+
+[SELECT_CREATURE:GIANT_COYOTE]
+	[LARGE_PREDATOR]
+
+
+[SELECT_CREATURE:GIANT_CHEETAH]
+	[LARGE_PREDATOR]
+
+
+[SELECT_CREATURE:GIANT_COUGAR]
+	[LARGE_PREDATOR]
+
+
+-SELECT_CREATURE:GIANT_ADDER-					-a giant snake could and probably would eat a dwarf, but probably wouldnt pursue a dwarf, ig...-
+	-LARGE_PREDATOR-
+
+
+[SELECT_CREATURE:GIANT_MONITOR_LIZARD]				-to include the komodo dragon, most monitor lizards would seem capable but generally unwilling to stalk and pursue humans were they giant-		-theyre definitely oppurtunistic however-
+	[LARGE_PREDATOR]							-second thought, a komodo weighs 100kg or so, this puppy weighs over 3x that-
+
+
+[SELECT_CREATURE:WILD_BOAR]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:GIANT_WILD_BOAR]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:HIPPO]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:HIPPO_MAN]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:GIANT_HIPPO]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:WALRUS]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:WALRUS_MAN]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:GIANT_WALRUS]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:GIANT_OTTER]						-I mean, if you dont FA, you wont FO-
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+-SELECT_CREATURE:GIANT_KANGAROO-					-im mostly okay with the idea of them being benign-
+
+
+[SELECT_CREATURE:WARTHOG]							-hog in vanilla are very calm and chill, and irl there are videos of them toeing up to rhinos (rather foolishly, mind you).  Meerkats will use them for protection.-
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:GIANT_WARTHOG]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:RHINOCEROS]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+	[VIEWRANGE:12]				-I imagine viewrange is LoS distance.  An adventure mode player character with a viewrange of 10 tiles would only see 10 tiles in any direction-	-unsure how that affects ranged combat, ie hunting-
+
+[SELECT_CREATURE:RHINOCEROS_MAN]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+	[VIEWRANGE:12]
+
+[SELECT_CREATURE:GIANT_RHINOCEROS]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+	[VIEWRANGE:12]
+
+
+[SELECT_CREATURE:GIANT_MUSKOX]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+-GIANT PEREGRINE FALCON-							-its a (giant) crow sized falcon, its a predator on one hand, and used to being wary of predators on the other.  The behavior of the giant should be largely influenced by the base creature.
+	-CV_REMOVE_TAG:BENIGN-
+	-APPLY_CURRENT_CREATURE_VARIATION-
+
+
+[SELECT_CREATURE:GIANT_WEASEL]					-dwarves living in a hole in the ground, sized at 1/3 of this beast ... who specializes in hunting animals that live in holes in the ground?-
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:GIANT_STOAT]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:GIANT_BARN_OWL]				-Hunt small mammals and sometimes bats, lizards, etc.-
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:GIANT_GREAT_HORNED_OWL]		-These are far more aggressive in their hunting-
+	[LARGE_PREDATOR]
+
+[SELECT_CREATURE:GIANT_SNOWY_OWL]				-these ones prefer swooping low to spook out prey, and pouncing-	-they eat many mammals, and have more difficulty perching than most birds-	-engage in oppurtunism-
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:GIANT_EAGLE]					-seems to be a snake eagle or bald eagle from the in-game picture-	-one perches from a tree to grab snakes, the other soars overhead to dive bombs small mammals and reptiles-
+		[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:GIANT_EMU]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:CASSOWARY]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:CASSOWARY_MAN]	
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:GIANT_CASSOWARY]	
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+-SELECT_CREATURE:GIANT_SKUNK-					-its omnivorous, feeding on animals as large of moles and lizards-		-itd probably fall into the 'can be scared away easily enough' category of oppurtunistic-
+
+
+[SELECT_CREATURE:GIANT_BOBCAT]				-bobcats have adaptive hunting patterns according to how abundant prey is.  They go after larger prey during scarity.  They go after livestock and fowl-	-bobcats should hunt humanoids in seasonal downturns-
+		[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+
+[SELECT_CREATURE:GIANT_CRAB]		-There are many types of crab, but the base game assumes the base crab is 8k in size, thats not tiny.-		-the represented crab is likely a scavanger more than a predator, although crab do that too-
+	[VIEWRANGE:12]
+
+
+[SELECT_CREATURE:GIANT_SPIDER_MONKEY]		-spider monkeys will do a lot of work to intimdate something into staying away, but ultimately thats only if theyre scared of it.  They also seem to stand their ground, at a safe distance.-
+		[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:GIANT_MARMOT_HOARY]		-hoary marmots are herbivores, living in the mountains and close to the trees and large rocks.		They can be seen sunning, foraging, theyre like squirrels, but bigger.  They can be habituated to people.-
+		[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:GIANT_SWAN]				-Swans are a lot of noise and bluster, but at 4.5x a dwarf theyre not going to back down-
+		[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:MOOSE]						-Besides the stories of moose trampling men and using their forehooves to batter hunters and tank pickup trucks, I really want to see them attack something-
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:MOOSE MAN]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:MOOSE, GIANT]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:GIANT_ELK]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:GIANT_JACKAL]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:GIANT_ELEPHANT_SEAL]
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+[SELECT_CREATURE:GIANT_GIRAFFE]			-anything above a certain size should not be running from a dwarf-
+	[CV_REMOVE_TAG:BENIGN]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+

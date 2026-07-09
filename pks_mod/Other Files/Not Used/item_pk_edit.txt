@@ -1,0 +1,12 @@
+item_pk_edit
+
+*edits to vanilla items*
+
+[OBJECT:ITEM]
+
+-SELECT_ITEM:ITEM_HELM_CAP-			-Caps are a way to get head armor to your civilian dwarves.  Any non-armor metal clothing is.  Mind you, coverage 50-
+	-ARMORLEVEL:0-
+
+-SELECT_ITEM:ITEM_HELM_MASK-		-Masks, which I presume hold cultural or religious significance, are a way to give civilians metal protection.  Mind you, coverage 50-
+	-ARMORLEVEL:1-
+

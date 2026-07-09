@@ -1,0 +1,670 @@
+reaction_zzz_pk_dummy
+
+*file is so named in order to place the dummy reactions at the end of every sorting list*
+
+*NOTE: there does not appear to be a valid token for the mechanic workshop building*
+
+[OBJECT:REACTION]
+
+*Dummy Reactions, so I can mod new reactions into current games, mostly for testing purposes*
+
+	[REACTION:ASHERY_DUMMY_1]
+		[BUILDING:ASHERY:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:ASHERY_DUMMY_2]
+		[BUILDING:ASHERY:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:ASHERY_DUMMY_3]
+		[BUILDING:ASHERY:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:BOWYER_DUMMY_1]
+		[BUILDING:BOWYER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:BOWYER_DUMMY_2]
+		[BUILDING:BOWYER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:BOWYER_DUMMY_3]
+		[BUILDING:BOWYER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:CARPENTER_DUMMY_1]
+		[BUILDING:CARPENTER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:CARPENTER_DUMMY_2]
+		[BUILDING:CARPENTER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:CARPENTER_DUMMY_3]
+		[BUILDING:CARPENTER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:CLOTHES_DUMMY_1]
+		[BUILDING:CLOTHES:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:CLOTHES_DUMMY_2]
+		[BUILDING:CLOTHES:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:CLOTHES_DUMMY_3]
+		[BUILDING:CLOTHES:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:CRAFTSMAN_DUMMY_1]
+		[BUILDING:CRAFTSMAN:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:CRAFTSMAN_DUMMY_2]
+		[BUILDING:CRAFTSMAN:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:CRAFTSMAN_DUMMY_3]
+		[BUILDING:CRAFTSMAN:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:DYER_DUMMY_1]
+		[BUILDING:DYER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:DYER_DUMMY_2]
+		[BUILDING:DYER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:DYER_DUMMY_3]
+		[BUILDING:DYER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:FARMER_DUMMY_1]
+		[BUILDING:FARMER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:FARMER_DUMMY_2]
+		[BUILDING:FARMER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:FARMER_DUMMY_3]
+		[BUILDING:FARMER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:GLASS_DUMMY_1]
+		[BUILDING:GLASS:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:GLASS_DUMMY_2]
+		[BUILDING:GLASS:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:GLASS_DUMMY_3]
+		[BUILDING:GLASS:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:KILN_DUMMY_1]
+		[BUILDING:KILN:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:KILN_DUMMY_2]
+		[BUILDING:KILN:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:KILN_DUMMY_3]
+		[BUILDING:KILN:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:KITCHEN_DUMMY_1]
+		[BUILDING:KITCHEN:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:KITCHEN_DUMMY_2]
+		[BUILDING:KITCHEN:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:KITCHEN_DUMMY_3]
+		[BUILDING:KITCHEN:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:LEATHER_DUMMY_1]
+		[BUILDING:LEATHER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:LEATHER_DUMMY_2]
+		[BUILDING:LEATHER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:LEATHER_DUMMY_3]
+		[BUILDING:LEATHER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:MASON_DUMMY_1]
+		[BUILDING:MASON:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:MASON_DUMMY_2]
+		[BUILDING:MASON:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:MASON_DUMMY_3]
+		[BUILDING:MASON:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:METALSMITH_DUMMY_1]
+		[BUILDING:METALSMITH:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:METALSMITH_DUMMY_2]
+		[BUILDING:METALSMITH:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:METALSMITH_DUMMY_3]
+		[BUILDING:METALSMITH:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:MILLSTONE_DUMMY_1]
+		[BUILDING:MILLSTONE:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:MILLSTONE_DUMMY_2]
+		[BUILDING:MILLSTONE:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:MILLSTONE_DUMMY_3]
+		[BUILDING:MILLSTONE:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:QUERN_DUMMY_1]
+		[BUILDING:QUERN:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:QUERN_DUMMY_2]
+		[BUILDING:QUERN:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:QUERN_DUMMY_3]
+		[BUILDING:QUERN:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:SIEGE_DUMMY_1]
+		[BUILDING:SIEGE:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:SIEGE_DUMMY_2]
+		[BUILDING:SIEGE:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:SIEGE_DUMMY_3]
+		[BUILDING:SIEGE:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:SMELTER_DUMMY_1]
+		[BUILDING:SMELTER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:SMELTER_DUMMY_2]
+		[BUILDING:SMELTER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:SMELTER_DUMMY_3]
+		[BUILDING:SMELTER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:STILL_DUMMY_1]
+		[BUILDING:STILL:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:STILL_DUMMY_2]
+		[BUILDING:STILL:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:STILL_DUMMY_3]
+		[BUILDING:STILL:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:TANNER_DUMMY_1]
+		[BUILDING:TANNER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:TANNER_DUMMY_2]
+		[BUILDING:TANNER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:TANNER_DUMMY_3]
+		[BUILDING:TANNER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:WOOD_DUMMY_1]
+		[BUILDING:WOOD:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:WOOD_DUMMY_2]
+		[BUILDING:WOOD:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:WOOD_DUMMY_3]
+		[BUILDING:WOOD:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:SOAP_MAKER_DUMMY_1]
+		[BUILDING:SOAP_MAKER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:SOAP_MAKER_DUMMY_2]
+		[BUILDING:SOAP_MAKER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:SOAP_MAKER_DUMMY_3]
+		[BUILDING:SOAP_MAKER:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:SCREW_PRESS_DUMMY_1]
+		[BUILDING:SCREW_PRESS:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:SCREW_PRESS_DUMMY_2]
+		[BUILDING:SCREW_PRESS:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+
+	[REACTION:SCREW_PRESS_DUMMY_3]
+		[BUILDING:SCREW_PRESS:NONE]
+		-SKILL:LEATHERWORK-
+		[CATEGORY:XDUMMYX]
+		[CATEGORY_NAME:XdummyreactionX]
+		[NAME:Dummy reaction to create space to add a reaction mid-game.]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[PRODUCT:100:1:BOULDER:NO_SUBTYPE:INORGANIC:COAL_BITUMINOUS]
+		[DESCRIPTION:This takes 1 bitluminous coal boulder, and turns it into a bitluminous coal boulder.]
+

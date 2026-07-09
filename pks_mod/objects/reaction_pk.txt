@@ -1,0 +1,88 @@
+reaction_pk
+
+[OBJECT:REACTION]
+
+* I _can_ make a simple production tree using a breastplate and a few odds and ends like leather, thread, etc to creat shoulderpads, and then combine those.  However I _cannot_ force the game to keep the quality of the original item.*
+* I can, however, ask the game to create unfinished goods in the form of tools and then have all of those combine at the end of the chain into a product.  Again, quality will not be preserved, however.*
+
+*these unbracketed reactions have multiple variations in reaction_pk_specific to ensure reagents are of the same material
+
+	-REACTION:GOUSSET_ADD-				-combines a gousset set with an unfinished armor to create a chestplate.-
+	-REACTION:GOUSSET_UNFINISHED-			-forge a non-functional chestplate-
+	-REACTION:GOUSSET_MAKE-			-craft the gousset out of metal, using some thread-
+
+	[REACTION:MAKE_SHARP_ROCK_FORT]				-craft a sharpened rock shank-
+		[NAME:make sharpened rock shiv]
+		[BUILDING:CRAFTSMAN:NONE]
+		[SKILL:STONECRAFT]
+		[REAGENT:A:1:BOULDER:NO_SUBTYPE:NONE:NONE][NO_EDGE_ALLOWED][WORTHLESS_STONE_ONLY]
+		[PRODUCT:100:3:WEAPON:ITEM_WEAPON_DAGGER_LARGE_STONE:GET_MATERIAL_FROM_REAGENT:A:NONE][FORCE_EDGE][SKILL_ROLL_RANGE:5:2]		-these arent meant to be high quality, thus the lower skill roll-
+		[DESCRIPTION:craft 3 all-stone sharpened rocks of crude craftsdwarfship.]
+
+	[REACTION:GOUSSET_SCRAP_BREASTPLATE]			-break down UB armor into 1/3 a set of goussets, leaving a ruined set of armor scrap for melting-
+		[CATEGORY:CHESTPLATE_CREATE]
+		[NAME:strip a breastplate for goussets]
+		[BUILDING:CRAFTSMAN:NONE]
+		[SKILL:METALCRAFT]
+		[REAGENT:A:1:ARMOR:ITEM_ARMOR_BREASTPLATE:NONE:NONE]-CAN_USE_ARTIFACT-			-This will accept any *non-decorated* armor, except artifacts-
+		[PRODUCT:50:1:TOOL:ITEM_TOOL_GOUSSET_SCRAP:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]					-I cant think of anything more tedious than having to juggle empty bags for fractions of a finished good-
+		[PRODUCT:100:1:TOOL:ITEM_TOOL_ARMOR_SCRAP:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+		[PRODUCT:50:1:TOOL:ITEM_TOOL_ARMOR_SCRAP:GET_MATERIAL_FROM_REAGENT:A:NONE][FORCE_EDGE][SKILL_ROLL_RANGE:3:1]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:strip a set of armor for whatever workable protective bits it has, ruining it in the process.  1 in 2 chance of generating 1 salvaged gousset.]
+
+	[REACTION:GOUSSET_SCRAP_FUSED_PLATE]			-break down UB armor into 1/3 a set of goussets, leaving a ruined set of armor scrap for melting-
+		[CATEGORY:CHESTPLATE_CREATE]
+		[NAME:strip fused platemail for goussets]
+		[BUILDING:CRAFTSMAN:NONE]
+		[SKILL:METALCRAFT]
+		[REAGENT:A:1:ARMOR:ITEM_ARMOR_FUSED_PLATE:NONE:NONE]-CAN_USE_ARTIFACT-
+		[PRODUCT:100:1:TOOL:ITEM_TOOL_GOUSSET_SCRAP:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+		[PRODUCT:25:1:TOOL:ITEM_TOOL_GOUSSET_SCRAP:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+		[PRODUCT:100:1:TOOL:ITEM_TOOL_ARMOR_SCRAP:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+		[PRODUCT:75:1:TOOL:ITEM_TOOL_ARMOR_SCRAP:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:strip a set of armor for whatever workable protective bits it has, ruining it in the process.  A chance for more than 1 salvaged gousset.]
+
+	[REACTION:GOUSSET_SCRAP_CHESTPLATE]			-break down UB armor into 1/3 a set of goussets, leaving a ruined set of armor scrap for melting-
+		[CATEGORY:CHESTPLATE_CREATE]
+		[NAME:strip chestplate for goussets]
+		[BUILDING:CRAFTSMAN:NONE]
+		[SKILL:METALCRAFT]
+		[REAGENT:A:1:ARMOR:ITEM_ARMOR_CHESTPLATE:NONE:NONE]-CAN_USE_ARTIFACT-
+		[PRODUCT:100:1:TOOL:ITEM_TOOL_GOUSSET_SCRAP:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+		[PRODUCT:50:1:TOOL:ITEM_TOOL_GOUSSET_SCRAP:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+		[PRODUCT:50:1:TOOL:ITEM_TOOL_GOUSSET_SCRAP:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+		[PRODUCT:100:1:TOOL:ITEM_TOOL_ARMOR_SCRAP:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+		[PRODUCT:75:1:TOOL:ITEM_TOOL_ARMOR_SCRAP:GET_MATERIAL_FROM_REAGENT:A:NONE][SKILL_ROLL_RANGE:3:1]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:strip a set of armor for whatever workable protective bits it has, ruining it in the process.  A chance for more than 1 salvaged gousset.]
+
+	[REACTION:GOUSSET_SCRAP_COMBINE]												-combine 3 scrap goussets into 1 functional set of goussets-
+		[CATEGORY:CHESTPLATE_CREATE]
+		[NAME:combine incomplete gousset sets]
+		[BUILDING:CRAFTSMAN:NONE]
+		-SKILL:FORGE_ARMOR-															-unskilled labor, other than knowledge-
+		[REAGENT:A:3:TOOL:ITEM_TOOL_GOUSSET_SCRAP:NONE:NONE]						-i will make specific metal interactions if i notice them mixing-
+		[REAGENT:B:1:BAG:NONE:NONE:NONE]
+			[EMPTY][PRESERVE_REAGENT][EMPTY][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+		[PRODUCT:100:1:TOOL:ITEM_TOOL_GOUSSET:GET_MATERIAL_FROM_REAGENT:A:NONE]
+			[PRODUCT_DIMENSION:150][PRODUCT_TO_CONTAINER:B]
+		[ADVENTURE_MODE_ENABLED]
+		[DESCRIPTION:combine 3 (same-material) salvaged goussets into one full set.]
+
+
+[REACTION:LIQUID_IN_WEAPON]
+	[NAME:test to see how game handles placing poisons/etal into other stuff]
+	[ADVENTURE_MODE_ENABLED]
+	[BUILDING:TANNER:NONE]
+	[SKILL:BREWING]
+	[REAGENT:A:1:LIQUID_MISC:NONE:NONE:NONE][UNROTTEN]
+	[REAGENT:B:1:BUCKET:NONE:NONE:NONE[CONTAINS:A][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+	[REAGENT:C:1:WEAPON:ITEM_WEAPON_MACE_TRAINING:NONE:NONE]
+		[EMPTY][PRESERVE_REAGENT]
+		[DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+	[PRODUCT:100:1:LIQUID_MISC:NONE:GET_MATERIAL_FROM_REAGENT:A]				-I believe weapons and non-containers may still be forced to hold 3-
+		[PRODUCT_TO_CONTAINER:C]
+		[PRODUCT_DIMENSION:150]
+	[DESCRIPTION:take liquid from a container and put it into a weapon.]

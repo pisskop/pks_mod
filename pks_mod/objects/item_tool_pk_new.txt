@@ -1,0 +1,46 @@
+item_tool_pk_new
+
+*Tools of the mod, thought probably not used for anything other than as intermediates*
+
+[OBJECT:ITEM]
+
+
+[ITEM_TOOL:ITEM_TOOL_GOUSSET]						-a pile of rivets, fillings, straps, whatever, fitted onto armor plates and joint protectors.  Attatched to unfinished armor-
+[NAME:set of goussets:sets of goussets]
+[VALUE:15]				-25*30 for steel is 900.  I dont have a good feel for the economy.  What is there right now works, I rather like the nerfed dwarfbucks system.  Used to be you could export your chairs and rotting tomato soup-
+[METAL_MAT]
+-TOOL_USE:LIQUID_COOKING-
+[TILE:166]
+[SIZE:800]
+[MATERIAL_SIZE:1]
+
+
+[ITEM_TOOL:ITEM_TOOL_ARMOR_SCRAP]							-scraps of armor that are fit only to melt down-
+[NAME:armor scrap:armor scraps]
+[VALUE:5]
+[METAL_MAT]
+-TOOL_USE:LIQUID_COOKING-
+[TILE:252]
+[SIZE:2400]
+[MATERIAL_SIZE:2]
+
+
+[ITEM_TOOL:ITEM_TOOL_GOUSSET_SCRAP]							-scraped armor turns into incomplete sets and scrap armor.-
+[NAME:incomplete gousset set:incomplete gousset sets]
+[VALUE:5]
+[METAL_MAT]
+-TOOL_USE:LIQUID_COOKING-
+[TILE:252]
+[SIZE:350]
+[MATERIAL_SIZE:1]
+
+
+[ITEM_TOOL:ITEM_TOOL_ARMOR_INCOMPLETE]						-not wearable until its complete.-
+[NAME:unfinished chestplate:unfinished sets of chestplate]
+[VALUE:10]
+[METAL_MAT]
+-TOOL_USE:LIQUID_COOKING-
+[TILE:091]
+[SIZE:3000]
+[MATERIAL_SIZE:4]
+

@@ -1,0 +1,140 @@
+creature_pk_select-unique_man
+
+*The purpose of this is to give all unique sentient humanoids their own class.  ie: elves are distinct from animal men, and gremlins are as well.
+
+Notable non-sentients that might be confused for sentient:
+
+- hungrey head
+- fire imp
+- unicorn
+- gorilla/monkey
+- grimeling
+- molemarian
+- crundle
+- yet/sasquatch
+
+
+[OBJECT:CREATURE]
+
+
+* These creatures are semimegabeasts.
+
+[SELECT_CREATURE:GIANT]						-slow learner-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:MINOTAUR]
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:ETTIN]
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+
+* These creatures are already main civilization entities.
+
+[SELECT_CREATURE:DWARF]
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+-SELECT_CREATURE:ELF-						-Elves were removed in favor of the elf_pk-
+	-CREATURE_CLASS:UNIQUE_MAN-
+
+[SELECT_CREATURE:ELF_PK]					-mod content, innately magical-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:HUMAN]						-THE titular creature-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+-SELECT_CREATURE:GOBLIN-					-goblins got removed in favor of goblin_pk-
+	-CREATURE_CLASS:UNIQUE_MAN-
+
+[SELECT_CREATURE:GOBLIN_PK]					-mod content, innately magical-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:KOBOLD]					-speaks jibberish-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:MERLOCK]					-mod content-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:KLAXXON]					-mod content-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:ALTAINEN]					-mod content-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+
+* These creatures are found in the wild.
+
+[SELECT_CREATURE:GREMLIN]					-mischievious-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:INNOCENT_DEVIL]			-mod content, mischievious, speaks jibberish-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:INNOCENT_DEVIL_NOT]		-mod content, mischievious, speaks jibberish-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:GORLAK]
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:PIXIE]						-vermin, cannot open doors-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:FAIRY]						-vermin, cannot open doors-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:FAIRY_GIANT]				-mod content, based on fairy, fully sentient-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:BLENDEC_FOUL]				-male only, an evil satyr-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:SATYR]						-male only, a good foul blendec-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:HARPY]						-female only, cannot open doors-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:NIGHTWING]					-cannot speak, genderless-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:GNOME_DARK]				-speaks jibberish-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:GNOME_MOUNTAIN]			-speaks jibberish-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:OGRE]						-slow learner, cannot speak-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:BLIZZARD_MAN]				-slow learner, cannot speak, has no actual brain, made of flesh currently-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:BLIND_CAVE_OGRE]			-slow learner, cannot speak-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:TROLL]						-slow learner, cannot speak-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:TROGLODYTE]				-slow learner, cannot speak-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:MANERA]					-slow learner, cannot speak-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:PLUMP_HELMET_MAN]			-cannot speak, a 'constructed' man.   Has no actual brain, made of organic plant tissue, unlike the elemental men-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:MERPERSON]					-aquatic-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+
+* These are not 'men' per se, nor necessarily even humanoidish, but they are varying degrees of sentient.
+
+-SELECT_CREATURE:IT-						-semimegabeast, cannot open doors, mod content-
+-CREATURE_CLASS:UNIQUE_MAN-
+
+-SELECT_CREATURE:SHRAT-						-slow learner, cannot open doors, mod content-
+-CREATURE_CLASS:UNIQUE_MAN-
+
+-SELECT_CREATURE:DIONAEA-					-slow learner, cannot open doors, mod content-
+-CREATURE_CLASS:UNIQUE_MAN-

@@ -1,0 +1,61 @@
+Changelog, begun 26MAY19
+
+- Moved the old PLAINS entity to the unused files for safe-keeping.  Replaced it with a more defined coastal PLAINS entity.
+- Unbracketed the CDI:VERB_TARGET notifications that were spamming fortress mode.  This should reduce clutter in the log if nothing else.
+- Added a mythical creatures file, for creatures not meant to appear in-game.  Moved entity creatures to their own file.
+- Created appropriate bodyplans for Klaxxon.
+- Created new HIVE_MIND entity.  They'll use the forest retreats and perfer wetter and warm biomes.
+- Created new files for the purpose of organizing creatures into classes.  classes are tokens applied to creatures that can be called upon to single them out for syndromes, entity animal selection, as the targets of antagonism or special senses (such as sense creature througb walls), and more.
+		In vanilla, most creature were general_poison class, meaning they were affected by most syndromes.  Mammals had a mammal class, and select poisonous creatures had a poisonous class.
+				Classes HYBRID_MAN, UNIQUE_MAN, VERMINZ, and INSECTOID have been created.  These tokens have no effect unless called upon specifically.
+- Created a 'small edits' file, intended to correct discrepencies between creature/item descriptions and in-game presence where possible, and note them where not.  Example:  pixies do not have wings, but their description mentions them.
+- Reduced sizes of some creatures.
+- Created a file for the text listing of lists such as spheres and personality inclinations.
+- Tweaked the sizes for the plant creatures down.  Shrat were about the size of an elephant seal at adulthood, now the size of a moose or horse.
+- Created Altenian civilization and species.  Cavemen and barbarians, these larger-than-human humanoids have very thick bones and a violent temper.
+- began process of shifting modified vanilla raws over to seperate files, going to [cut] the relevant vanilla creatures and entities.
+- Elves now start with a significant amount of 'supernatural' first-kin.  These are highly skilled and buffed with all kinds of -mostly- useless buffs.  Their function is to tame wild animals in worldgen and numerically buff elves before they die off.
+- Removed most of the 'always present' animals from entities.  its a heavy handed way to ensure their survival that ends up detracting from gameplay when they always bring them.
+
+
+Changelog for version starting 26MAY29
+
+- removed octopus from insectoid group.  The klaxxon tried to bring 2 along as pack animals, with funny results.  It may be that you cannot modify a creature in 2 seperate files.
+- Added Atlal, and javelin ammo.  Atlals are ancient spear throwing tools, to improve range and velocity, in game they are slower than crossbows, shorter ranged than everything, and less accurate.
+    They have better impact for limb bending and armor damage.  Best countered at range, where they suffer from accuracy more.  The javelins themselves make better melee weapons than the atlal.  unfortunately the game hardcodes bundles of 25.
+- Added chestplates, goussets, and a small production line to obtain them.  Chestplate is a breastplate that also protects the neck and shoulder.  Leather armor is about the only other armor to offer protection to the neck and shoulder by default.
+    - Chestplate production: forge 1 gousset with metal and thread into empty bag.  Forge 1 unfinished armor.  Combine the 2 at craft station with 1 tanned hide.
+- Added a training mace -effectively a wooden club- and a stone dagger, meant for low quality equipping of your civilians.
+- Added will-o-the-wisp monster.  Small, very dodgy, made of vapor.  Will cast a sleep spell on your dwarves, and inhaling its mist (for instance, when it dies) will cause medium term drowsiness.
+- Added Kaiju, godzilla stand-in with radioactive ice breath and a large size.
+- Added 'innocent devil', a gremlin analogue that can appear anywhere.
+
+
+Changelog for version starting 26JUN21
+
+- Added 'not-so-innocent devil', a larger and hopefully more fighty version who sneaks into your fort to cause mayham and maybe a little violence.
+- culled the vanilla creatures and entities, establishing new ones to replace them.  this removes the last conflicts with vanilla using the [cut] and [select] tools.
+- created a proper mod folder, making the mod official, or at least standardized.
+- added dummy reactions to all buildings.  3 per building, they turn 1 bitluminous coal boulder into 1 bitluminous coal boulder.  This is for modding reactions into an existing game.  For me.
+- added a temporary 'put liquid into cudgel' reaction.  This is for testing purposes.
+- Added LONGEVITY to the elven list of sphere associations and predilictions.  This is the antithesis of the death sphere, and helps to prevent them from pursuing the secrets of it.
+- Added several dwarven positions, and 'tiered' many more.  As the fortress grows, more administrative roles will demand rooms of higher quality.
+
+- Added giant cave lobsters, a straightforward glass cannon the size of a cave croc.
+- Added blood filtch, a raccoon sized blood gnat that bases itself out of (not savage) evil freshwater lakes, swamps, and marshes.
+- Added some small edits to pkcreatureedit, the 'small edits' to creatures file.
+- Giant fairies, also known as faeries, are present in joyous wilds.  They are generally cheerful and friendly.
+- Added Holistic, a unique demon based on holistic spawn of ye olde fame.  Fake head, mouth in chest, corpulent, necromancer, its intended to be killed by pulping or damaging its obsidian heart.
+- Added a 'war masque'. Slightly larger helmet with an implied stylized face on it.  Inspiration is roman helmets, medival knight helms, 'death mask' helmets, etc. Plenty of fantasy examples too.  Not meant for playable entities.
+- Added 'MARTIAL' and 'XENOPHOBE' Dwarf entities.  playable cultural variants whose purpose is to settle provide unaligned dwarf contact.  the hope is to make them unplayable and interact with the fort.  but still be dwarves.
+
+- Developed and release 'pks frequency mod', which changes the rarity of creatures.  It is a stand alone, but meant to be use with this mod; by me at least.  It functions to allow me more control over spawning my own critters.
+	- pks frequency mod is meant to be loaded after this one, its the one that changes this one, not the converse.
+- Added many 'edits' to creature, small changes using the (select) tool.  So many Ive split the file into 2, 'agonisms' for behavior based changes, and 'flavorisms' for thematic changes.
+- Added a wrestling tongue for frogs, regeneration CDI for earthworms, axoytls, etc.
+- Several animals are either no longer benign, or outright large predators now.  Typically these animals are giant variations or otherwise generally more confrontations/willing to fight than DF sometime portrays them as.
+	- Im a little concerned about it being anywhere from 'annoying' to 'outright hostile' for players, lmk.
+- If using the pks-frequency mod, many animals have their pop_num and cluster_size changed up or down.  Typcially up for most smaller things and down for the largest.  Things like wild cats are tpyically upped too.
+	- this has the effect of making breeding pairs easier to catch and making harassment animals more persistant.  Its not quite 'kill 2-3 clusters, and theyre done.
+- Other small changes include adding value to the pelts/fur of traditionally hunted animals.  I get the point of the game isnt to commit furry animal murder, but at the same time it is.
+-

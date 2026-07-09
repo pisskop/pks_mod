@@ -1,0 +1,116 @@
+item_weapon_pk_new
+
+[OBJECT:ITEM]
+
+[ITEM_WEAPON:ITEM_WEAPON_ATLAL]		-the atlal is a very ancient tool that launches thrown javelins much further than by hand alone.-
+[NAME:atlal:atlals]
+[SIZE:200]
+[SKILL:SWORD]
+[RANGED:THROW:JAVELIN]				-Dwarf v Altenian maxed out iron battles were very even, but atlal tends to bend body part around more.  I found that at longer range dwarves fare better than closer-
+[TWO_HANDED:35001]
+[MINIMUM_SIZE:20000]				-kobold-
+[AIM_DIFFICULTY:7]
+[NOCKED:30:15]
+[INITIATE_SHOT_TIME:2]				-The atlal is slow to fire, esp with minimal skill.  The difference between novice and dabbling is huge for ranged walking tank battles.-
+[SHOT_RECOVERY_TIME:1]
+[SHOOT_FORCE:1000]					-unskilled and average stength units have a range of 8-10 or so tiles with heavy metal, effectively unlimited with wood-
+[SHOT_FORCE_REQUIRES:STRENGTH:1500]
+[SHOT_FORCE_REQUIRES:THROW:15]
+[SHOOT_MAXVEL:125]									-Gemini claims an arrow clocks in between 100 to 200 mph, and a blowdart the same.  It claims an javelin thrown from an atlal is 60-100mph.-
+[MATERIAL_SIZE:1]									-the atlal itself can be anything from the length of your forearm to standing up to your naval-
+[ATTACK:BLUNT:10000:4000:bash:bashes:NO_SUB:1250]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+
+[ITEM_AMMO:ITEM_AMMO_JAVELIN]
+[NAME:javelin:javelins]
+[CLASS:JAVELIN]
+[SIZE:350]										-darts are 20, arrows and bolts 150-
+[ATTACK:EDGE:1:50:stab:stabs:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+
+[ITEM_WEAPON:ITEM_WEAPON_PICK_WAR]		-a pick designed for fighting, will not be used for mining by dwarves-
+[NAME:war pick:war picks]
+[SIZE:400]
+[SKILL:MINING]
+[TWO_HANDED:47500]
+[MINIMUM_SIZE:42500]
+[MATERIAL_SIZE:4]
+[ATTACK:EDGE:20:5000:strike:strikes:NO_SUB:2000]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+[ATTACK:BLUNT:100:4000:bash:bashes:back:2000]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+
+[ITEM_WEAPON:ITEM_WEAPON_STILETTO]	-a dagger that can only stab-
+[NAME:stiletto:stilettos]
+[SIZE:175]
+[SKILL:DAGGER]
+[TWO_HANDED:20000]
+[MINIMUM_SIZE:5000]
+[MATERIAL_SIZE:1]
+[ATTACK:EDGE:5:1250:stab:stabs:NO_SUB:1250]
+	[ATTACK_PREPARE_AND_RECOVER:2:3]
+[ATTACK:BLUNT:20:600:strike:strikes:pommel:1000]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+
+
+[ITEM_WEAPON:ITEM_WEAPON_ELVEN_MAUL]	-an attempt to get elves to use better wooden weapons-
+[NAME:club:clubs]
+[SIZE:1100]
+[SKILL:HAMMER]
+[TWO_HANDED:62500]
+[MINIMUM_SIZE:40000]
+[MATERIAL_SIZE:4]
+[ATTACK:BLUNT:100:6000:bash:bashes:NO_SUB:2000]
+	[ATTACK_PREPARE_AND_RECOVER:3:4]
+
+
+[ITEM_WEAPON:ITEM_WEAPON_SHORT_SPEAR]	-tiny kobold and subterranean animal men weapon-
+[NAME:short spear:short spears]
+[SIZE:200]
+[SKILL:SPEAR]
+[TWO_HANDED:20000]
+[MINIMUM_SIZE:10000]
+[MATERIAL_SIZE:2]
+[ATTACK:EDGE:20:10000:stab:stabs:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+[ATTACK:BLUNT:10000:6000:bash:bashes:shaft:1250]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+
+
+[ITEM_WEAPON:ITEM_WEAPON_MICRO_PICK]	-tiny kobold and subterranean animal men weapon-
+[NAME:micro pick:micro picks]
+[SIZE:300]
+[SKILL:MINING]
+[TWO_HANDED:35050]						-bat man but not cave swallow man-
+[MINIMUM_SIZE:20000]
+[MATERIAL_SIZE:2]
+[ATTACK:EDGE:100:4000:strike:strikes:NO_SUB:2000]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+
+[ITEM_WEAPON:ITEM_WEAPON_MACE_TRAINING]			-its a wooden club with a knob at one end-
+[NAME:cudgel:cudgels]
+[SIZE:800]
+[SKILL:MACE]
+[TWO_HANDED:47500]
+[MINIMUM_SIZE:42500]
+[MATERIAL_SIZE:4]
+[ATTACK:BLUNT:200:4000:bash:bashes:NO_SUB:2500]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+[ATTACK:BLUNT:100:1000:strike:strikes:pommel:1000]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+[TRAINING]
+
+[ITEM_WEAPON:ITEM_WEAPON_DAGGER_LARGE_STONE]		-meant to be a cheap way to arm your dwarves, esp. your civilians-
+[NAME:dagger:daggers]
+[ADJECTIVE:stonework]
+[SIZE:200]
+[SKILL:DAGGER]
+[TWO_HANDED:20000]
+[MINIMUM_SIZE:5000]
+[MATERIAL_SIZE:2]
+[ATTACK:EDGE:1000:800:slash:slashes:NO_SUB:1250]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+[ATTACK:EDGE:5:1000:stab:stabs:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
+[ATTACK:BLUNT:20:600:strike:strikes:pommel:1000]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]

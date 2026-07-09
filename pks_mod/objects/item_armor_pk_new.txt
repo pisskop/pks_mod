@@ -1,0 +1,151 @@
+item_armor_pk_new
+
+[OBJECT:ITEM]
+
+
+***UB ARMOR***
+
+
+[ITEM_ARMOR:ITEM_ARMOR_FUSED_PLATE]		-heavy, restictive upper body armor that covers the lower arms and lower body-
+[NAME:platemail:platemails]
+[ADJECTIVE:fused]
+[ARMORLEVEL:3]
+[MATERIAL_SIZE:12]
+[UBSTEP:2]
+[LBSTEP:1]
+[LAYER:ARMOR]
+[COVERAGE:100]
+[LAYER_SIZE:30]
+[LAYER_PERMIT:50]
+[SHAPED]
+[HARD]
+[METAL]
+[BARRED]
+[LEATHER]
+[SCALED]
+
+
+[ITEM_ARMOR:ITEM_ARMOR_CHESTPLATE]		-full upper-body protection that covers the elbow, UB, and neck.  Did you know leather armor also covers the neck and elbow-
+[NAME:chestplate:chestplates]
+[ADJECTIVE:fitted]
+[ARMORLEVEL:2]
+[MATERIAL_SIZE:10]					-not produced the standard way in player forts.  made via reactions, not smithing-
+[UBSTEP:1]							-protects the neck and shoulders-
+[LBSTEP:0]
+[LAYER:ARMOR]
+[COVERAGE:100]
+[LAYER_SIZE:20]						-breastplate is 20, mail is 15.  The armor layers seem balanced around the meta of 3 chain shirts and a breastplate, which honestly Im not a huge fan of.-
+[LAYER_PERMIT:50]
+[SHAPED]
+[HARD]
+[METAL]
+-BARRED-							-bones are akward to use for armor in the best of times-
+[LEATHER]							-Leather reinforcements for the joints and neck padding is exactly the point-
+[SCALED]							-so are clam shalls lol-
+
+
+***HAND ARMOR***
+
+
+[ITEM_GLOVES:ITEM_GLOVES_SELBUVOTT]		-a mitten-style glove, often patterened.  This can be made of chain for basic armor-
+[NAME:selbuvott:selbuvotts]
+[CHAIN_METAL_TEXT]
+[ARMORLEVEL:0]
+[METAL_ARMOR_LEVELS]
+[MATERIAL_SIZE:1]
+[LAYER:UNDER]
+[COVERAGE:100]
+[LAYER_SIZE:20]
+[LAYER_PERMIT:10]
+[SOFT]
+[METAL]
+[LEATHER]
+[STRUCTURAL_ELASTICITY_CHAIN_METAL]
+
+
+***HEAD ARMROR***
+
+
+[ITEM_HELM:ITEM_HELM_MASQUE_WAR]	-A full-helmet with a stylized face on it, intended to be used by overtly hostile entities and not the player.-	-Notably, will lack any detail on *what* the mask is depicting or looks like.-
+[NAME:war masque:war masque]
+[ADJECTIVE:helmed]
+[ARMORLEVEL:1]
+[METAL_ARMOR_LEVELS]
+[SHAPED]
+[LAYER:ARMOR]
+[COVERAGE:100]
+[LAYER_SIZE:40]							-is larger than a normal helmet-
+[LAYER_PERMIT:20]
+[MATERIAL_SIZE:4]
+[HARD]
+[METAL]
+[BARRED]
+
+
+[ITEM_HELM:ITEM_HELM_HEADBAND]		-a band of cloth or metal placed at the scalp.  Dwarves can show up with steel headbands, resulting in a hilariously overvalued sweatband-
+[NAME:headband:headbands]
+[ARMORLEVEL:0]
+[MATERIAL_SIZE:1]
+[LAYER:UNDER]
+[COVERAGE:20]
+[LAYER_SIZE:5]
+[LAYER_PERMIT:100]
+[SOFT]
+[LEATHER]
+[METAL]
+[STRUCTURAL_ELASTICITY_WOVEN_THREAD]
+
+
+[ITEM_HELM:ITEM_HELM_CAP_ARMING]			-A headpiece that covers the back, sides, neck, and top of the head.  In the context of the game, only armor.-
+[NAME:coif:coifs]
+[CHAIN_METAL_TEXT]
+[METAL_ARMOR_LEVELS]
+[ARMORLEVEL:1]
+[LAYER:UNDER]
+[COVERAGE:67]								-the face is uncovered-
+[LAYER_SIZE:15]								-the primary concern is how the armor stacks.  I want more variety in armor, not neccessarily more armor stacked onto one creature.  Helm allows 20-
+[LAYER_PERMIT:20]
+[MATERIAL_SIZE:1]
+[LEATHER]
+[HARD]
+[METAL]
+[STRUCTURAL_ELASTICITY_CHAIN_METAL]
+
+
+***LB ARMOR***
+
+
+[ITEM_PANTS:ITEM_PANTS_SKIRT_KILT]		-a skirt made of pleated sheets of fabric or metal, ie a kilt-
+[NAME:skirt:skirts]
+[ADJECTIVE:kilted]
+[ARMORLEVEL:0]
+[METAL_ARMOR_LEVELS]
+[MATERIAL_SIZE:5]
+[LAYER:COVER]
+[LBSTEP:1]
+[COVERAGE:100]
+[LAYER_SIZE:15]
+[LAYER_PERMIT:80]
+[MATERIAL_SIZE:3]
+[SOFT]
+[METAL]
+[LEATHER]
+[BARRED]
+[SCALED]
+[STRUCTURAL_ELASTICITY_CHAIN_METAL]
+
+
+[ITEM_PANTS:ITEM_PANTS_SKIRT_WAR]		-a skirt made of rigid, banded metal or leather, ie a roman or japanese 'kilt'-
+[NAME:war skirt:war skirts]
+[ARMORLEVEL:MAX]
+[METAL_ARMOR_LEVELS]
+[MATERIAL_SIZE:6]
+[LAYER:COVER]
+[LBSTEP:2]
+[COVERAGE:100]
+[LAYER_SIZE:20]
+[LAYER_PERMIT:60]
+[HARD]
+[METAL]
+[BARRED]
+[LEATHER]
