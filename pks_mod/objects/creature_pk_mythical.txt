@@ -4,6 +4,131 @@ creature_pk_mythical
 
 [OBJECT:CREATURE]
 
+
+[CREATURE:GRUESOME_DEMISE]					-an effort to remove the body of something consumed-
+	[DOES_NOT_EXIST][FANCIFUL]
+	[DESCRIPTION:A once proud creature, reduced to the point of near-death.  A meal-in-waiting.]
+	[NAME:meal:meals:food]
+	[CASTE_NAME:meal:meal:food]
+	[CREATURE_TILE:'*'][ALTTILE:'.']
+	[EXTRAVISION][NOBREATHE][NONAUSEA][NOEMOTION][NOMEAT][NOBONES]
+	[CREATURE_CLASS:GENERAL_POISON]
+	[HOMEOTHERM:11000]					-'fire safe'-
+	[BODY_SIZE:0:0:998]
+	[PREFSTRING:gruesome end][PREFSTRING:gory demise]
+
+	[BODY:BASIC_1PARTBODY_THOUGHT]
+	[USE_MATERIAL_TEMPLATE:FOODSTUFF:CREATURE_EXTRACT_TEMPLATE]
+		[STATE_NAME:SOLID:scraps]
+		[STATE_NAME:LIQUID:scraps]
+		[STATE_NAME:GAS:scraps]
+
+	[USE_MATERIAL:FOODSTUFF]
+	[TISSUE:FOODSTUFF]
+		[TISSUE_NAME:scraps:NP]
+		[TISSUE_MATERIAL:LOCAL_CREATURE_MAT:FOODSTUFF]
+		[TISSUE_MAT_STATE:GAS]
+		[MUSCULAR]
+		[FUNCTIONAL]
+		[STRUCTURAL]
+		[RELATIVE_THICKNESS:1]
+		[CONNECTS]
+		[TISSUE_SHAPE:LAYER]
+
+	[TISSUE_LAYER:BY_CATEGORY:ALL:FOODSTUFF]			-this seems to actually set the tissue layer as being present-
+	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
+	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
+	[CASTE:SNACK]
+
+
+[CREATURE:GNAT_FUNGUS_MAGGOT]				-immobile, armored, spits webs, and eventually will turn into a cocoon-
+	[DOES_NOT_EXIST]							-not meant to spawn naturally-
+	[DESCRIPTION:A small larvae that anchors itself to a substrate using strong silken thread.  It ensnares small prey with its sticky threads and colorful bioluminescence and attempts to consume them.]
+	[NAME:fungus gnat larvae:fungus gnat larvae:fungal gnat larvae]										-once I add a mushroom tree with a good name, rename this to that-
+	[CASTE_NAME:fungus gnat larvae:fungus gnat larvae:fungal gnat larvae]
+	[CREATURE_TILE:248][COLOR:7:0:1][ALTTILE:015][GLOWCOLOR:3:0:1]
+	[NATURAL][SAVAGE][ALL_ACTIVE]
+	[LARGE_ROAMING][BENIGN][HUNTS_VERMIN][BLOODSUCKER]						-no cheating and using these to repopulate webs-
+	[BIOME:SUBTERRANEAN_CHASM][UNDERGROUND_DEPTH:2:2]
+	[POPULATION_NUMBER:0:0][CLUSTER_NUMBER:0:0]
+	[NOBONES][CANNOT_JUMP][IMMOBILE][EXTRAVISION]
+	[NO_DRINK][NO_EAT][NO_SLEEP]
+	[HOMEOTHERM:10041]
+	[PREFSTRING:glowing bodies][PREFSTRING:glistening threads][PREFSTRING:dangling]
+
+	[BODY:BODY_WITH_HEAD_FLAG:HEART:GUTS:BRAIN:MOUTH:2_ANTENNAE:SHELL]
+	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
+		[REMOVE_MATERIAL:HAIR]
+		[REMOVE_MATERIAL:BONE]
+	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
+		[REMOVE_TISSUE:HAIR]
+		[REMOVE_TISSUE:BONE]
+	[BODY_DETAIL_PLAN:EXOSKELETON_TISSUE_LAYERS:SHELL:SKIN:FAT:MUSCLE]
+	[HAS_NERVES]
+
+	[USE_MATERIAL_TEMPLATE:SHELL:SHELL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:SHELL:SHELL_TEMPLATE]
+
+	[USE_MATERIAL_TEMPLATE:SILK:SILK_TEMPLATE]	
+	[WEBBER:LOCAL_CREATURE_MAT:SILK]
+
+	[CAN_DO_INTERACTION:CUSTOM_SMALL_EMISSION]							-this was supposed to target a random location and spritz -not spray- it down with web.  Ive managed to reduce how many webs it makes and Ill call it a win-
+		[CDI:MATERIAL:LOCAL_CREATURE_MAT:SILK:WEB_SPRAY]
+		[CDI:TOKEN:SPRAY_WEB]								-for graphics, I dont need to change this-
+		[CDI:ADV_NAME:cast a bait]
+		[CDI:VERB:unspool silken lures:unspools silken lures:NA]
+		[CDI:USAGE_HINT:DEFEND]
+		[CDI:USAGE_HINT:CLEAN_SELF]
+		[CDI:USAGE_HINT:CLEAN_FRIEND]
+		[CDI:USAGE_HINT:NEGATIVE_SOCIAL_RESPONSE]
+		[CDI:USAGE_HINT:TORMENT]
+		[CDI:USAGE_HINT:FLEEING]
+		[CDI:BP_REQUIRED:BY_TOKEN:ANTENNA]
+		[CDI:TARGET_RANGE:B:10]
+		[CDI:TARGET:B:LINE_OF_SIGHT]
+		[CDI:MAX_TARGET_NUMBER:B:1]
+		[CDI:TARGET_RANGE:C:6]
+		[CDI:TARGET:C:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:C:1]
+		[CDI:MAX_TARGET_NUMBER:C:1]
+		[CDI:WAIT_PERIOD:3600]
+
+	[CAN_DO_INTERACTION:GNAT_FUNGAL_MAGGOT_GROWUP]					-Rolls to see if it transforms into a grown adult every month-
+		[CDI:ADV_NAME:try to grow up, may fail.]
+		[CDI:USAGE_HINT:DEFEND]
+		[CDI:USAGE_HINT:CLEAN_SELF]
+		[CDI:USAGE_HINT:FLEEING]
+		[CDI:BP_REQUIRED:BY_TOKEN:ANTENNA]
+		[CDI:TARGET:A:SELF_ONLY]
+		[CDI:TARGET_RANGE:A:1]
+		[CDI:MAX_TARGET_NUMBER:A:1]
+		[CDI:WAIT_PERIOD:33000]			-shy of 1 month-
+
+	[ATTACK:STING:BODYPART:BY_CATEGORY:MOUTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:MAIN]
+		[ATTACK_FLAG_CANLATCH]
+
+	[USE_MATERIAL_TEMPLATE:ICHOR:ICHOR_TEMPLATE]
+	[BLOOD:LOCAL_CREATURE_MAT:ICHOR:LIQUID]
+
+	[BODY_SIZE:0:0:8000]
+	[MAXAGE:1:1]
+
+	[BODY_APPEARANCE_MODIFIER:LENGTH:50:75:90:100:110:125:150]
+
+	[CASTE:Larvae]
+
+	[SELECT_CASTE:ALL]
+	[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+		[TL_COLOR_MODIFIER:CLEAR:1]											-see through skin-
+			[TLCM_NOUN:skin:SINGULAR]
+
+
 [CREATURE:BOMB]
 	[NAME:bomb:bombs:bomb]
 	[BODY:BASIC_1PARTBODY_THOUGHT]
@@ -126,12 +251,12 @@ creature_pk_mythical
 		[MULTIPLY_VALUE:4]
 
 
-[CREATURE:ELPIDAEMON]											-Cthulu-esque Star Child-
+[CREATURE:STAR_DAEMON]											-Cthulu-esque Star Child-
 	[FANCIFUL][DOES_NOT_EXIST]
 
-	[DESCRIPTION:A tentacled creature from beyond the stars.]
-	[NAME:elpidaemon:elpidaemons:elpidaemon]
-	[CASTE_NAME:elpidaemon:elpidaemons:elpidaemon]
+	[DESCRIPTION:A tentacled creature from unknown places.]
+	[NAME:star child:star children:star child]
+	[CASTE_NAME:star child:star children:star child]
 	[CREATURE_TILE:14][COLOR:3:0:0]
 	[INTELLIGENT][CANOPENDOORS]
 	[BENIGN][AT_PEACE_WITH_WILDLIFE]
@@ -215,7 +340,6 @@ creature_pk_mythical
 	[MANNERISM_KNUCKLES:knuckles]
 	[MANNERISM_LIPS:lips]
 	[MANNERISM_CHEEK:cheek]
-	[MANNERISM_NAILS:nails]
 	[MANNERISM_FEET:feet]
 	[MANNERISM_ARMS:arms]
 	[MANNERISM_HANDS:hands]
@@ -232,3 +356,105 @@ creature_pk_mythical
 	[CASTE:FEMALE]
 		[FEMALE]
 		[MALE]
+
+
+[CREATURE:LEGION]		-A ball, with 4 'tails' coming out of it.Those tails have 4 'bodies' each that will melt off of the creature, damaging it and allowing it to necromancy these.  This was made before summoning was a thing.-
+-This thing is OLD.I made this way back in yonder days.  Its also very ambitious, and I was still quite new to modding.  Im mostly jerryrigging the (notably incomplete) tokens I found rather than remaking new ones here.-
+[DOES_NOT_EXIST][FANCIFUL]
+
+	[DESCRIPTION:An enormous lurching mass of rotten, moving bodies.It is said to absorb the bodies of those it strikes down.]
+	[NAME:legion:legion:legion]
+	[CASTE_NAME:legion:legion:legion]
+	[CREATURE_TILE:'8'][COLOR:4:5:0] 									*Red with purple background
+	-BIOME:ALL_MAIN-[EVIL][SAVAGE]-FREQUENCY:20-						-if freq could work to gate this thing HEAVILY, thatd be nice actually-
+	-MEGABEAST--SAVAGE-													*Demon?	-not demon.  Unique demon is kind of thematically jarring tbh-
+	[FLIER][BUILDINGDESTROYER:2][EXTRAVISION]							-Im reasonably sure the BPs that get revived will share the properties of the og critter.
+	[EQUIPS][CANOPENDOORS][OPPOSED_TO_LIFE]
+ 	[BONECARN]-LARGE_ROAMING-[MEANDERER]
+	[SPHERE:DEFORMITY][SPHERE:DEATH][SPHERE:CHAOS]
+	[PREFSTRING:flailing bodies][PREFSTRING:caccophany of wails][PREFSTRING:assimilation method]
+
+[BODY:BASIC_1PARTBODY:ORGANS]								-no point in having unique parts for a creature not in the game atm-
+
+	[EXTRAVISION][HOMEOTHERM:10070]
+	[NOBREATHE][NOSTUN][NONAUSEA][NOEMOTION][NO_EAT][NO_SLEEP][NO_DIZZINESS][NO_FEVERS]
+	[CREATURE_CLASS:GENERAL_POISON][CREATURE_CLASS:LEGION]
+
+	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
+	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
+	[REMOVE_TISSUE:HAIR]
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+		[TL_MAJOR_ARTERIES]
+
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+	[USE_MATERIAL_TEMPLATE:SINEW:SINEW_TEMPLATE]
+	[TENDONS:LOCAL_CREATURE_MAT:SINEW:200]
+	[LIGAMENTS:LOCAL_CREATURE_MAT:SINEW:200]
+	[HAS_NERVES]
+	[USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_TEMPLATE]
+	[BLOOD:LOCAL_CREATURE_MAT:BLOOD:LIQUID]
+	[CREATURE_CLASS:GENERAL_POISON]
+	[GETS_WOUND_INFECTIONS]
+	[GETS_INFECTIONS_FROM_ROT]
+
+	[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
+		[PUS:LOCAL_CREATURE_MAT:PUS:SOLID]
+
+	[SELECT_MATERIAL:PUS]								-it melts on contact with the air-	-used to melt off the 'zombies'-
+	[SPEC_HEAT:1]
+	[IGNITE_POINT:NONE]
+	[MELTING_POINT:10000]
+	[BOILING_POINT:10001]
+	[HEATDAM_POINT:10002]
+	[MAT_FIXED_TEMP:10200]
+	[STATE_NAME_ADJ:ALL_SOLID:purulent goop]
+	[STATE_NAME:GAS:purulent vapor]
+	[STATE_ADJ:GAS:purulent vapor]
+	[STATE_NAME:LIQUID:purulent fluid]
+	[STATE_ADJ:LIQUID:purulent fluid]
+
+	[SYNDROME]												-also a chance to make a syndrome out of it-
+	[SYN_CONTACT]
+	[SYN_INHALED]
+	[SYN_INJECTED]
+	[SYN_NAME:purulent fluid]
+	[SYN_AFFECTED_CLASS:GENERAL_POISON]
+	[SYN_IMMUNE_CREATURE:LEGION:ALL]
+		[CE_FEVER:SEV:50:RESISTABLE:START:10:PEAK:2400:END:8400]
+		[CE_BLISTERS:SEV:50:RESISTABLE:LOCALIZED:START:10:PEAK:2400:END:8400]
+		[CE_OOZING:SEV:50:RESISTABLE:LOCALIZED:START:10:PEAK:2400:END:8400]
+
+	[BLOOD:LOCAL_CREATURE_MAT:PUS:LIQUID]
+
+
+	[CAN_DO_INTERACTION:NECROMANCY]							-necromancy through walls-		-i removed its reanimate BPs interaction, should readd if they will ever get added/summoned-
+		[CDI:ADV_NAME:raise dead]
+		[CDI:BP_REQUIRED:BY_CATEGORY:BRAIN]
+		[CDI:VERB:suddenly spasm:suddenly spasms:NA]
+		-CDI:TARGET:A:LINE_OF_SIGHT-
+		[CDI:TARGET_RANGE:A:10]
+		[CDI:MAX_TARGET_NUMBER:A:8]
+		[CDI:WAIT_PERIOD:600]
+
+	[CAN_DO_INTERACTION:WILD_REGENERATION]					-regrow its zombie parts, so they can melt again-		-i have no clue how this affects zombies, or raised parts of a monster, lol, now Im curious-
+		[CDI:ADV_NAME:regrow]
+		[CDI:USAGE_HINT:DEFEND]
+		[CDI:USAGE_HINT:CLEAN_SELF]
+		[CDI:VERB:quiver:quivers:NA]
+		[CDI:TARGET:A:SELF_ONLY]
+		[CDI:TARGET_RANGE:A:1]
+		[CDI:MAX_TARGET_NUMBER:A:1]
+		[CDI:WAIT_PERIOD:1200]
+
+	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:6561:6115:5683:1755:7456:8567] 5 kph
+	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:6561:6115:5683:1755:7456:8567] 5 kph
+	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:6561:6115:5683:1755:7456:8567] 5 kph
+	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:6561:6115:5683:1755:7456:8567] 5 kph			-it may not swim or climb, but its bodyparts might-
+	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:6561:6115:5683:1755:7456:8567] 5 kph
+	[BODY_SIZE:0:0:18000000]
+	[ALL_ACTIVE]
+
+	[BODY_APPEARANCE_MODIFIER:HEIGHT:40:65:85:100:115:135:160]
+	[BODY_APPEARANCE_MODIFIER:BROADNESS:40:65:85:100:115:135:160]
+

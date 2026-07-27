@@ -138,3 +138,14 @@ Notable non-sentients that might be confused for sentient:
 
 -SELECT_CREATURE:DIONAEA-					-slow learner, cannot open doors, mod content-
 -CREATURE_CLASS:UNIQUE_MAN-
+
+[SELECT_CREATURE:LICH_SCIENTIST]			-An intelligent Night Hunter that also possess the power token-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:DAEGOL]					-An intelligent Night Hunter has a paraltyic bite-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+[SELECT_CREATURE:HOLISTIC]					-A unique demon that is based on another mod-
+	[CREATURE_CLASS:UNIQUE_MAN]
+
+

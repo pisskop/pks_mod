@@ -14,11 +14,11 @@ reaction_pk_specific
 		[SKILL:LEATHERWORK]				-does not involve forging, does involve fitting leather and materials together-
 		[REAGENT:A:1:TOOL:ITEM_TOOL_ARMOR_INCOMPLETE:METAL:COPPER]
 		[REAGENT:copper goussets:1:TOOL:ITEM_TOOL_GOUSSET:METAL:COPPER]
-		[REAGENT:C:1:BAG:NONE:NONE:NONE[CONTAINS:copper goussets][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+		[REAGENT:C:1:BAG:NONE:NONE:NONE][CONTAINS:copper goussets][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 		[REAGENT:D:1:SKIN_TANNED:NONE:NONE:NONE]
 		[PRODUCT:100:1:ARMOR:ITEM_ARMOR_CHESTPLATE:GET_MATERIAL_FROM_REAGENT:A:NONE]
 		[ADVENTURE_MODE_ENABLED]
-		[DESCRIPTION:joins the goussets to the unfinished armor, completing it and extending its coverage to the elow and covering the neck.  Consumes a tanned hide.]
+		[DESCRIPTION:joins the goussets to the unfinished armor, completing it and extending its coverage to the elbow and covering the neck.  Consumes a tanned hide.]
 
 	[REACTION:GOUSSET_ADD_BRONZE]
 		[CATEGORY:CHESTPLATE_CREATE]
@@ -27,11 +27,11 @@ reaction_pk_specific
 		[SKILL:LEATHERWORK]				-does not involve forging, does involve fitting leather and materials together-
 		[REAGENT:A:1:TOOL:ITEM_TOOL_ARMOR_INCOMPLETE:METAL:BRONZE]
 		[REAGENT:bronze goussets:1:TOOL:ITEM_TOOL_GOUSSET:METAL:BRONZE]
-		[REAGENT:C:1:BAG:NONE:NONE:NONE[CONTAINS:bronze goussets][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+		[REAGENT:C:1:BAG:NONE:NONE:NONE][CONTAINS:bronze goussets][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 		[REAGENT:D:1:SKIN_TANNED:NONE:NONE:NONE]
 		[PRODUCT:100:1:ARMOR:ITEM_ARMOR_CHESTPLATE:GET_MATERIAL_FROM_REAGENT:A:NONE]
 		[ADVENTURE_MODE_ENABLED]
-		[DESCRIPTION:joins the goussets to the unfinished armor, completing it and extending its coverage to the elow and covering the neck.  Consumes a tanned hide.]
+		[DESCRIPTION:joins the goussets to the unfinished armor, completing it and extending its coverage to the elbow and covering the neck.  Consumes a tanned hide.]
 
 	[REACTION:GOUSSET_ADD_BISMUTH]
 		[CATEGORY:CHESTPLATE_CREATE]
@@ -40,11 +40,11 @@ reaction_pk_specific
 		[SKILL:LEATHERWORK]				-does not involve forging, does involve fitting leather and materials together-
 		[REAGENT:A:1:TOOL:ITEM_TOOL_ARMOR_INCOMPLETE:METAL:BISMUTH]
 		[REAGENT:bismuth goussets:1:TOOL:ITEM_TOOL_GOUSSET:METAL:BISMUTH]
-		[REAGENT:C:1:BAG:NONE:NONE:NONE[CONTAINS:bismuth goussets][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+		[REAGENT:C:1:BAG:NONE:NONE:NONE][CONTAINS:bismuth goussets][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 		[REAGENT:D:1:SKIN_TANNED:NONE:NONE:NONE]
 		[PRODUCT:100:1:ARMOR:ITEM_ARMOR_CHESTPLATE:GET_MATERIAL_FROM_REAGENT:A:NONE]
 		[ADVENTURE_MODE_ENABLED]
-		[DESCRIPTION:joins the goussets to the unfinished armor, completing it and extending its coverage to the elow and covering the neck.  Consumes a tanned hide.]
+		[DESCRIPTION:joins the goussets to the unfinished armor, completing it and extending its coverage to the elbow and covering the neck.  Consumes a tanned hide.]
 
 	[REACTION:GOUSSET_ADD_IRON]
 		[CATEGORY:CHESTPLATE_CREATE]
@@ -57,7 +57,7 @@ reaction_pk_specific
 		[REAGENT:D:1:SKIN_TANNED:NONE:NONE:NONE]
 		[PRODUCT:100:1:ARMOR:ITEM_ARMOR_CHESTPLATE:GET_MATERIAL_FROM_REAGENT:A:NONE]
 		[ADVENTURE_MODE_ENABLED]
-		[DESCRIPTION:joins the goussets to the unfinished armor, completing it and extending its coverage to the elow and covering the neck.  Consumes a tanned hide.]
+		[DESCRIPTION:joins the goussets to the unfinished armor, completing it and extending its coverage to the elbow and covering the neck.  Consumes a tanned hide.]
 
 	[REACTION:GOUSSET_ADD_STEEL]
 		[CATEGORY:CHESTPLATE_CREATE]
@@ -66,11 +66,11 @@ reaction_pk_specific
 		[SKILL:LEATHERWORK]				-does not involve forging, does involve fitting leather and materials together-
 		[REAGENT:A:1:TOOL:ITEM_TOOL_ARMOR_INCOMPLETE:METAL:STEEL]
 		[REAGENT:steel goussets:1:TOOL:ITEM_TOOL_GOUSSET:METAL:STEEL]
-		[REAGENT:C:1:BAG:NONE:NONE:NONE[CONTAINS:steel goussets][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+		[REAGENT:C:1:BAG:NONE:NONE:NONE][CONTAINS:steel goussets][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 		[REAGENT:D:1:SKIN_TANNED:NONE:NONE:NONE]
 		[PRODUCT:100:1:ARMOR:ITEM_ARMOR_CHESTPLATE:GET_MATERIAL_FROM_REAGENT:A:NONE]
 		[ADVENTURE_MODE_ENABLED]
-		[DESCRIPTION:joins the goussets to the unfinished armor, completing it and extending its coverage to the elow and covering the neck.  Consumes a tanned hide.]
+		[DESCRIPTION:joins the goussets to the unfinished armor, completing it and extending its coverage to the elbow and covering the neck.  Consumes a tanned hide.]
 
 	[REACTION:GOUSSET_ADD_ADAMANTINE]
 		[CATEGORY:CHESTPLATE_CREATE]
@@ -79,11 +79,11 @@ reaction_pk_specific
 		[SKILL:LEATHERWORK]				-does not involve forging, does involve fitting leather and materials together-
 		[REAGENT:A:1:TOOL:ITEM_TOOL_ARMOR_INCOMPLETE:METAL:ADAMANTINE]
 		[REAGENT:adamantine goussets:1:TOOL:ITEM_TOOL_GOUSSET:METAL:ADAMANTINE]
-		[REAGENT:C:1:BAG:NONE:NONE:NONE[CONTAINS:adamantine goussets][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
+		[REAGENT:C:1:BAG:NONE:NONE:NONE][CONTAINS:adamantine goussets][PRESERVE_REAGENT][DOES_NOT_DETERMINE_PRODUCT_AMOUNT]
 		[REAGENT:D:1:SKIN_TANNED:NONE:NONE:NONE]
 		[PRODUCT:100:1:ARMOR:ITEM_ARMOR_CHESTPLATE:GET_MATERIAL_FROM_REAGENT:A:NONE]
 		[ADVENTURE_MODE_ENABLED]
-		[DESCRIPTION:joins the goussets to the unfinished armor, completing it and extending its coverage to the elow and covering the neck.  Consumes a tanned hide.]
+		[DESCRIPTION:joins the goussets to the unfinished armor, completing it and extending its coverage to the elbow and covering the neck.  Consumes a tanned hide.]
 
 ***************
 ***************

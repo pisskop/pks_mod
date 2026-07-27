@@ -1,0 +1,67 @@
+Thoughts on Calm/Neutral/Good/Evil/Savage dynamic.
+
+
+-------------
+Neutral/Calm-
+-------------
+
+- Most real-world.
+- Fantasical units should be limited to minor boons and 'almost plausible'
+- doesnt need to be 'boring', but as the baseline, should be 'boring'.  Boring is good.
+- Closest in design to 'calm', calm should probably be boring.
+
+
+-----
+Evil-
+-----
+
+- Undead feature prominently
+- However evil should be about more than undeath.
+- Evil is also ugly, brutish, unreasoning, 'raw'.
+- Syndromes shouldnt all be fatal, but rather unpleasant.
+- So should the creatures.
+- Evil should tax the stress and morale of your dwarves, and eventually their morales.
+- Evil grows by expanding and corrupting, something that basegame does fairly well.  Undead expand, evil biomes themselves expand.
+- Evil should typically still provide the normal goods/items/rewards, with perhaps individual versions of evil limiting those.
+- ironically, evil seems to possess more creatures with intelligence than good biomes.
+- Evil should have specific reasons to visit it; thus it should have high value items and unique rewards.
+- I think its easy to fall into 'evil is evil for evil's sake'; there should be a logic behind it, or at least it should make sense why something exists and is evil.
+- Low and mid level evil shouldnt permanently weaken dwarves or corrupt tiles.  Outside of violence of course.
+- I think a lot of creatures in vanilla that are evil are fine, but just fine and mid.  Reachers, gremelings, harpies; these currently exist as evil because they are evil.  Especially harpies.
+- A lot of evil is just retold boogeymen.  Its a bit fatiguing.
+- Evil is the 'gotcha' alignment; but actual tricks should be simple or thematic.  There should be no meta tricks on the player.
+
+
+-------
+SAVAGE-
+-------
+
+- Savage biomes feature heavily on animal man versions.  Too heavily, imo.  animal men are fine, but should be featured much less frequently.
+- Itd also be nice if animal men possessed some level of civilization.  Static camps that spawned in every third savage region, that never grew or changed but existed on the local map as a dozen spearmen with blowguns.
+- Savage biomes are 'nature gone wild'.  giant animals are a great start.
+- Hyper-plants, hyper animals, hyper reactions, and biology cranked up to 12 on a 10 point scale.
+- Examples of good savagry are (some) dinosaurs, giant animals, predatory plants, invasive species.
+- I think its a shame that trees dont grow larger in savage biomes.
+- a good way to add more savagry into a savage biome might be to increase cluster size for savage versions of creatures.
+- Savage creatures should be more than capable of having an abnormally high amount of venoms and poisons, but they need not be deadly.
+- Stinging vermin, syndromes that spawn creatures (ie parasites), and more uniquely savage plants.
+- Savage should be 'mystical' in that its not well understood.
+- Savage biomes reflect life, not violence.  Violence is just a prominent part of life sometimes.
+- Savage animals should get skill buffs sparingly.  Theyre about natural ferocity.
+
+
+-----
+GOOD-
+-----
+
+- Perhaps the biome that got me to make this list.  Good is probably the least-well defined alignment in the game, imo.
+- 'Good' does not have to mean 'safe'.
+- Good biomes should have the most fantasical creatures of all.  These should make the least sense, imo.
+- Good should signify lack of corruption and spreading, which the core game does nail.
+- Good plants/creatures should not be capable of spreading well, as in they need protection because once theyre gone, theyre gone.  Which is why defenders of good makes so much sense.
+- Good should be the most obviously magical.
+- Elves themselves are a good example of how a good creature should behave;  it should be savage in its own way, vain, concerned about an 'ideal' rather than a 'practical'.
+- Good should have some way of stopping the corruption of evil, leaning into the themes of both.
+- Good should be cliquey; once it decides it doesnt want you, it should seek to dissaude you.  Bad mooods, closed off access, violence as a later resort.
+- An example of Good might be to 'make you so euphoric that you stop caring about the world around you.  Thats actually spot on for good; once you become good you struggle to exist outside of good.
+

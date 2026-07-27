@@ -1,6 +1,7 @@
 creature_pk_variantion
 
 *for critters that are variations of other creatures, such that they burrow part or all of their tokens from that parent creature*
+*note that it appears that mod-added creatures require their variations to be declared in the same file*
 
 [OBJECT:CREATURE]
 
@@ -143,6 +144,7 @@ creature_pk_variantion
 		[CVCT_REPLACEMENT:giant cave lobster]
 	[APPLY_CURRENT_CREATURE_VARIATION]
 	[APPLY_CREATURE_VARIATION:GIANT]
+	[CV_REMOVE_TAG:SAVAGE]										-exclusively cave giant animals will not be 'savage'-
 	[CV_REMOVE_TAG:CHANGE_BODY_SIZE_PERC]
 	[APPLY_CURRENT_CREATURE_VARIATION]
 	[GO_TO_END]
@@ -165,7 +167,7 @@ creature_pk_variantion
 	[PREFSTRING:blue pincers][PREFSTRING:alien appearance]
 	[APPLY_CREATURE_VARIATION:STANDARD_WALK_CRAWL_GAITS:900:750:600:439:1900:2900] 20 kph		-slow windup-
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
-	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS::2206:1692:1178:585:3400:4900] 15kpm
+	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS::2206:1692:1178:585:3400:4900] 15 kph
 
 	[ATTACK:PINCER:BODYPART:BY_CATEGORY:PINCER]
 		[ATTACK_SKILL:GRASP_STRIKE]

@@ -42,6 +42,7 @@ creature_pk_edit_agonisms
 		[CVCT_TARGET:TONGUE]
 		[CVCT_REPLACEMENT:TONGUE_STICKY]				-the tongue is modeled as a wrestling *limb* rather than something that shoots out and pulls in-
 	[LARGE_PREDATOR]									-toads are infamous for trying to eat snakes and actually eating mice-	-at 3.3x size a dwarf, theyre absolutely on the menu-
+	[APPLY_CURRENT_CREATURE_VARIATION]
 
 
 -SELECT_CREATURE:TOAD_MAN-			
@@ -85,6 +86,10 @@ creature_pk_edit_agonisms
 	[APPLY_CREATURE_VARIATION:KICK_HIGHVEL_ATTACK]
 
 
+[SELECT_CREATURE:GRASSHOPPER_MAN]	
+	[APPLY_CREATURE_VARIATION:KICK_HIGHVEL_ATTACK]
+
+
 [SELECT_CREATURE:GIANT_DRAGONFLY]		-not all giant animals should suddenly find dwarves to be prey, and chase them down, but certainly large predators should find smaller things prey-		-look up videos of opportunistic predation from things like horses-
 	[LARGE_PREDATOR]
 
@@ -95,7 +100,6 @@ creature_pk_edit_agonisms
 
 [SELECT_CREATURE:GIANT_JUMPING_SPIDER]			-hunting spiders tend to 'stalk' prey by investigating, circling, climbing to a perch; before jumping.-
 	[LARGE_PREDATOR]
-	[VIEWRANGE:12]
 
 
 [SELECT_CREATURE:GIANT_MANTIS]
@@ -189,10 +193,12 @@ creature_pk_edit_agonisms
 	[APPLY_CURRENT_CREATURE_VARIATION]
 	[VIEWRANGE:12]				-I imagine viewrange is LoS distance.  An adventure mode player character with a viewrange of 10 tiles would only see 10 tiles in any direction-	-unsure how that affects ranged combat, ie hunting-
 
+
 [SELECT_CREATURE:RHINOCEROS_MAN]
 	[CV_REMOVE_TAG:BENIGN]
 	[APPLY_CURRENT_CREATURE_VARIATION]
 	[VIEWRANGE:12]
+
 
 [SELECT_CREATURE:GIANT_RHINOCEROS]
 	[CV_REMOVE_TAG:BENIGN]
@@ -266,8 +272,7 @@ creature_pk_edit_agonisms
 	[APPLY_CURRENT_CREATURE_VARIATION]
 
 
-
-[SELECT_CREATURE:GIANT_CRAB]		-There are many types of crab, but the base game assumes the base crab is 8k in size, thats not tiny.-		-the represented crab is likely a scavanger more than a predator, although crab do that too-
+[SELECT_CREATURE:GIANT_CRAB]				-There are many types of crab, but the base game assumes the base crab is 8k in size, thats not tiny.-		-the represented crab is likely a scavanger more than a predator, although crab do that too-
 	[VIEWRANGE:12]
 
 
@@ -318,4 +323,65 @@ creature_pk_edit_agonisms
 [SELECT_CREATURE:GIANT_GIRAFFE]			-anything above a certain size should not be running from a dwarf-
 	[CV_REMOVE_TAG:BENIGN]
 	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:SNAIL]
+	[RETRACT_INTO_BP:BY_CATEGORY:SHELL:retract into its shell:retracts into its shell:extend out of its shell:extends out of its shell]
+
+
+[SELECT_CREATURE:GIANT_SNAIL]
+	[RETRACT_INTO_BP:BY_CATEGORY:SHELL:retract into its shell:retracts into its shell:extend out of its shell:extends out of its shell]
+
+
+[SELECT_CREATURE:SNAIL_MAN]
+	[RETRACT_INTO_BP:BY_CATEGORY:SHELL:retract into its shell:retracts into its shell:extend out of its shell:extends out of its shell]
+
+
+[SELECT_CREATURE:MOON_SNAIL]
+	[RETRACT_INTO_BP:BY_CATEGORY:SHELL:retract into its shell:retracts into its shell:extend out of its shell:extends out of its shell]
+
+
+[SELECT_CREATURE:MOON_SNAIL_MAN]
+	[RETRACT_INTO_BP:BY_CATEGORY:SHELL:retract into its shell:retracts into its shell:extend out of its shell:extends out of its shell]
+
+
+[SELECT_CREATURE:GIANT_MOON_SNAIL]
+	[RETRACT_INTO_BP:BY_CATEGORY:SHELL:retract into its shell:retracts into its shell:extend out of its shell:extends out of its shell]
+
+
+[SELECT_CREATURE:ECHIDNA]
+	[CANNOT_UNDEAD]				-This should stop them from dying while rolled up and becoming invincible-		-bug due to retracting into their upperbody-
+
+	
+[SELECT_CREATURE:ECHIDNA_MAN]
+	[CANNOT_UNDEAD]				-This should stop them from dying while rolled up and becoming invincible-		-bug due to retracting into their upperbody-
+
+
+[SELECT_CREATURE:GIANT_ECHIDNA]
+	[CANNOT_UNDEAD]				-This should stop them from dying while rolled up and becoming invincible-		-bug due to retracting into their upperbody-
+
+
+[SELECT_CREATURE:HEDGEHOG]
+	[CANNOT_UNDEAD]				-This should stop them from dying while rolled up and becoming invincible-		-bug due to retracting into their upperbody-
+
+	
+[SELECT_CREATURE:HEDGEHOG_MAN]
+	[CANNOT_UNDEAD]				-This should stop them from dying while rolled up and becoming invincible-		-bug due to retracting into their upperbody-
+
+
+[SELECT_CREATURE:GIANT_HEDGEHOG]
+	[CANNOT_UNDEAD]				-This should stop them from dying while rolled up and becoming invincible-		-bug due to retracting into their upperbody-
+
+
+[SELECT_CREATURE:PANGOLIN]
+	[CANNOT_UNDEAD]				-This should stop them from dying while rolled up and becoming invincible-		-bug due to retracting into their upperbody-
+
+	
+[SELECT_CREATURE:PANGOLIN_MAN]
+	[CANNOT_UNDEAD]				-This should stop them from dying while rolled up and becoming invincible-		-bug due to retracting into their upperbody-
+
+
+[SELECT_CREATURE:GIANT_PANGOLIN]
+	[CANNOT_UNDEAD]				-This should stop them from dying while rolled up and becoming invincible-		-bug due to retracting into their upperbody-
+
 

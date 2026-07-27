@@ -12,15 +12,37 @@ GENERAL TIPS
 - Vermin larger than 600: Lion tamarin, 620.  Hedgehog, 800.  Cave fish, 1000.  Creepy Crawler, 1000.  Cuttlefish, 1000.  Fire snake, 1000.  Knuckle worm, 1000.  Purring maggot, 1000.  Phantom Spider, 1000.  Two-legged rhino lizard, 1000.  Fluffy wambler, 2000.-  Fox squirrel, 2000.
 
 - rcp body parts can be used in standard creature templates-
+- Variations of a creature do not seem to inherit [select] edits of the base; they each require their own edit.
 
 - [select] allows you to pull up a raw token without presenting the whole list of tokens.  ie, [select_creature:dwarf] pulls the dwarf creature up.-
 - [cut] allows you to force the game to not use a defined raw token.  [CUT_ITEM:ITEM_HELM_HELM] removes helmets.-
 - A list of the objects the wiki says can be called upon using the above:  CREATURE, ENTITY, INTERACTION, ITEM, WORD, TRANSLATION, SYMBOL, INORGANIC, PLANT, MUSIC, SOUND, REACTION-
 
+- Tropical dry broadleaf forests, ie 'dry jungles' only spawn in medium or larger worlds with at least 1 pole.
+
+- You can get vermin into the arena by summoning them.
+
+- The following an example of a working syndrome, that impairs the lung function for half a day and then restores it within the next half an hour-
+	-			[CE_IMPAIR_FUNCTION:BP:BY_TYPE:BREATHE:ALL:SEV:300:PROB:75:RESISTABLE:START:0:END:600:ABRUPT]					-it prevents oxygen from bonding to red blood cells-
+	-			[CE_BRUISING:BP:BY_TYPE:BREATHE:ALL:SEV:100:PROB:100:RESISTABLE:START:601:END:625:ABRUPT]						-'a wound' to update the bps so that impair function is removed-
+
+- The following is the standard egg-layer token layout:
+
+	[BODY_DETAIL_PLAN:LEATHERY_EGG_MATERIALS]
+	[BODY_DETAIL_PLAN:EGG_MATERIALS]
+		[LAYS_EGGS]
+			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGGSHELL:SOLID]
+			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
+			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
+			[EGG_SIZE:1]
+		[CLUTCH_SIZE:5:25]
+
+
 ***************************
 **************************
 **************************
 UNDERUSED TAGS/TOKENS
+
 
 [RETRACT_INTO_BP:BY_CATEGORY:SHELL:roll into a ball:rolls into a ball:unroll:unrolls]	-ex: armadillos will retact (forced, all?) of their body into their shell, not moving or attacking but forcing all attacks to be made on that BP-
 [TRADE_CAPACITY:15000]		-amount of goods, presumably in urist-pounds, a critter can carry for the purpose of trade.  Found primarily on wagons.
@@ -28,17 +50,95 @@ UNDERUSED TAGS/TOKENS
 [GO_TO_TAG:USE_TISSUE_TEMPLATE:CLAW:CLAW_TEMPLATE]	-in this ex: a tiger man's claw tissue is referenced so that it can be modified further --> (TISSUE_LAYER:BY_CATEGORY:FINGER:CLAW:FRONT).  This gives use the familiar 'use material, define location' formula.
 [CAN_DO_INTERACTION:MATERIAL_EMISSION_WITH_HIDE_EFFECT]	-ie: octopus can squirt ink and then turn invisible until spotted again-
 [VIEWRANGE:20]		-probably how far the animal can see.  Ala adventure mode LoS.  20 is default, I imagine playing as a creature with more or less adjusts the range of vison accoringly.-
-[VISION_ARC:60:20]		-the range of vision (adventure mode mostly) that an animal has.  first number is binocular vision, second is monocular.  exact effects unknown, propably for stealth in both modes.  This is dereees, 0-360-
+[VISION_ARC:60:20]		-the range of vision (adventure mode mostly) that an animal has.  first number is binocular vision, second is monocular.  exact effects unknown, propably for stealth in both modes.  This is dereees, 0-360.-
+
+
+***************************
+**************************
+**************************
+CREATURE GAITS		-Im a little tired of hunting for the speed I want, lol-
+
+
+STANDARD_FLYING_GAITS
+STANDARD_BIPED_GAITS
+STANDARD_QUADRUPED_GAITS
+STANDARD_WALKING_GAITS
+STANDARD_CRAWLING_GAITS
+STANDARD_WALK_CRAWL_GAITS
+STANDARD_CLIMBING_GAITS
+STANDARD_SWIMMING_GAITS
+
+
+:9000:8900:8825:8775:9500:9900] 1 kph
+:8390:8204:8040:4388:8989:9567] 2 kph
+:6561:6115:5683:1755:7456:8567] 5 kph
+5951:5419:4898:1463:6944:8233] 6 kph
+:5341:4723:4112:1254:6433:7900] 7 kph
+
+:3512:2634:1756:878:4900:6900] 10 kph
+:2990:2257:1525:731:4300:6100] 12 kph
+:2728:2069:1409:675:4000:5700] 13 kph
+:2467:1880:1294:627:3700:5300] 14 kph
+:2206:1692:1178:585:3400:4900] 15 kph
+:1422:1127:831:488:2500:3700] 18 kph
+
+:900:750:600:439:1900:2900] 20 kph				-most giant animal default speed-
+:900:730:561:351:1900:2900] 25 kph
+:900:711:521:293:1900:2900] 30 kph				-dwarf speed-
+:900:691:482:251:1900:2900] 35 kph
+:900:675:450:225:1900:2900] 39 kph				-human speed-
+:900:657:438:219:1900:2900] 40 kph
+
+:900:642:428:214:1900:2900] 41 kph				-elf_pk speed-
+:900:549:366:183:1900:2900] 48 kph
+:900:471:314:157:1900:2900] 56 kph
+:900:300:200:100:1900:2900] 87+ (120) kph
+
+
+***************************
+**************************
+**************************
+KNOWN CLASSES THAT EXIST IN VANILLA
+
+
+SYNDROME_CLASS:WERECURSE
+SYNDROME_CLASS:VAMPCURSE
+SYNDROME_CLASS:DISTURBANCE_CURSE
+SYNDROME_CLASS:RAISED_UNDEAD
+SYNDROME_CLASS:RAISED_GHOST
+SYNDROME_CLASS:GHOUL
+
+CREATURE_CLASS:GENERAL_POISON
+CREATURE_CLASS:HUMANOID_TRACKING_SYMBOL
+CREATURE_CLASS:MAMMAL
+CREATURE_CLASS:POISONOUS
+CREATURE_CLASS:EDIBLE_GROUND_BUG
+
+
+Making the assumption these are creature classes of the added 53.15 dino udate.  Ill fix these up when I check can confirm.
+REAL_WORLD_EXTINCT
+CAMBRIAN
+CARBONIFEROUS
+CENOZOIC
+CRETACEOUS
+DEVONIAN
+JURASSIC
+ORDOVICIAN
+PERMIAN
+SILURIAN
+TRIASSIC
+
 
 ***************************
 **************************
 **************************
 MOST COMMON METALS/WEAPONS/ARMOR
 
-wood
-shell
-leather
-bone
+
+wood				PLANT_MAT:<PLANT>:<MATERIAL>
+shell				CREATURE_MAT:<CREATURE>:<MATERIAL>
+leather				CREATURE_MAT:<CREATURE>:<MATERIAL>
+bone				CREATURE_MAT:<CREATURE>:<MATERIAL>
 obsidian
 copper				INORGANIC:COPPER
 bronze				INORGANIC:BRONZE
@@ -55,8 +155,8 @@ adamantine			INORGANIC:ADAMANTINE
 ***************************
 **************************
 **************************
-
 PERSONALITY CREATURE TOKENS
+
 
 	-PERSONALITY:SWAYED_BY_EMOTIONS:0:50:100- min/median/max. Organized into 5 brackets: (0-20, 20-40, 40-60, 60-80, 80-100).  The +- 10 point range around median has ~72% chance to be rolled.
 
@@ -255,4 +355,148 @@ SPHERES
 ***************************
 **************************
 **************************
+
+FARMING
+
+	
+The following should be a complete list of vanilla plants that are farmable, gatherable, or tradable.
+
+
+**UNDERGROUND CROPS**		
+-these crops can grow underground, during the correct season, in any biome.-
+
+
+    Cave wheat
+    Dimple cup
+    Quarry bush
+    Pig tail
+    Plump helmet
+    Sweet pod
+
+
+**CROPS**		
+-these produce seeds and can be grown, above ground, in a farm plot in the correct biome during the correct season-
+
+
+    Artichoke
+    Asparagus
+    Barley
+    Beet
+    Bilberry
+    Bitter melon
+    Blackberry
+    Blade weed
+    Bloated tuber
+    Blood amaranth
+    Blueberry
+    Buckwheat
+    Cabbage
+    Caper
+    Cassava
+    Cotton
+    Cranberry
+    Cucumber
+    Eggplant
+    Finger millet
+    Fisher berry
+    Flax
+    Fonio
+    Foxtail millet
+    Grape
+	Hard wheat
+    Hemp
+    Hide root
+    Horned melon
+    Jute
+    Kaniwa
+    Kenaf
+    Leek
+    Lentil
+    Longland grass
+    Maize
+    Muck root
+    Muskmelon
+    Oats
+	Papyrus sedge
+    Parsnip
+    Passion fruit
+    Pearl millet
+    Pendant amaranth
+    Pepper
+    Pineapple
+    Potato
+    Prickle berry
+    Purple amaranth
+    Quinoa
+    Radish
+    Ramie
+    Raspberry
+    Rat weed
+    Rice
+    Rope reed
+    Rye
+    Single-grain wheat
+    Sliver barb
+    Soft wheat
+    Sorghum
+    Spelt
+    Squash
+    Strawberry
+    Sun berry
+    Sweet potato
+    Teff
+    Tomatillo
+    Tomato
+    Turnip
+    Two-grain wheat
+    Watermelon
+    Whip vine
+    White millet
+    Wild carrot
+    Winter melon
+
+
+**THESE PLANTS YIELD NO SEEDS WHEN FARMING THEM**
+-Seeds may still be bought or gathered-
+
+
+	Bambara groundnut
+    Broad bean
+    String bean
+    Bitter melon
+    Celery
+    Chickpea
+    Chicory
+    Cowpea
+    Garden cress
+    Garlic
+    Lettuce
+    Leek
+    Lentil
+    Mung bean
+    Onion
+    Pea
+    Peanut
+    Red bean
+    Rhubarb
+    Soybean
+    Spinach
+    Taro
+    Urad bean
+    Lesser yam
+    Long yam
+    Purple yam
+    White yam
+	Alfalfa
+    Bitter vetch
+    Red spinach
+    Elephant-head amaranth
+
+
+**THESE PLANTS NEVER PRODUCE SEEDS IN VANILLA**
+-products obtained through plant gathering-
+
+
+	Kobold Bulb
+	Valley Herb
 

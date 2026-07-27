@@ -58,4 +58,38 @@ Changelog for version starting 26JUN21
 - If using the pks-frequency mod, many animals have their pop_num and cluster_size changed up or down.  Typcially up for most smaller things and down for the largest.  Things like wild cats are tpyically upped too.
 	- this has the effect of making breeding pairs easier to catch and making harassment animals more persistant.  Its not quite 'kill 2-3 clusters, and theyre done.
 - Other small changes include adding value to the pelts/fur of traditionally hunted animals.  I get the point of the game isnt to commit furry animal murder, but at the same time it is.
--
+
+
+Changelog for version
+
+- Added (very short) hair to merlock.
+- Changed XENOPHOBE dwarves to autumn active season, to match vanilla dwarves.
+- Added wyvern semimegabeast, 8million sized flying lizard with no breathe weapon.  Seems to beat low-skilled dwarves handily, competent and iron armor is far more even.
+- Added Daegol Night Creature Hunter.  Paralyzing bite, deceptively dangerous as a result.
+- Added a Limerant Night creature hunter.  Seeks to hoarde knowledge; and occassionally poses as a living god.
+- Added Leaf Nosed Bat and Great Fox Bat, both are vermin, can be made pets, and live for up to 30 years.
+- Added springtail, camel spider, and harvestman vermin, and giant variants.
+- Added a giant wolf spider (no small one), and a 'dive spider'.  The concept for the 2 is essentially the same, one is found on the surface in savage biomes the other is in the caves.
+- Camel spider and giant camel spider for deserts.
+- Added a starworm.  Its a 7-armed starfish that slowly crawls the caverns.  Its beinign, but it has a devestating vapor attack.  Its external stomache can be cut off and thats what allows its emission.
+- Added book scorpion and giant book scorpion and book scorpion man.  Remind me to circle back around to try to make their silk an extract that we can then use on-site.
+- Added dragon millipede vermine and giant dragon millipede.  Both are benign, both secret cyanide from pores on their body, very deadly to touch with unprotected skin., like, very deadly if your arent wearing protecting clothing.
+	- Looking at you dogs, maybe cats too idk if theres contact when cats kill.
+	- Both book scorpions and dragon millipede vermin can be dissected so as to put their poisons into vials.  The millipedes cyanide especially is worth 10x.
+- Added common millipede and giant common millipede.
+- Added pillbug, giant and man version too.  Surface dwelling with a shell, though no shells from vermin.
+- Added a mesodillo, a 'large rat' sized pillbug in the cave with extra armor.
+- Added a cave crab, a benign scavanger.
+- Added a trochanter crab, an evil not quite as benign scavanger.
+- Added a cave beetle and giant variant.
+- Added velvet worm man.
+- Added cave cricket, giant cave cricket, and cave cricket man.
+- Added fungus gnat.  Fungus gnats are bloodsuckers with a drain blood attack.  When their time-since-last-bloodsuck counter is within a set perimeter they will gain the ability to lay live larvae on the ground.
+- Added fungus gnat larvae.  These small, heavily armored insectoids will 'spool' out thread in an attempt to capture prey to eat.  They may or may not turn back into adult fungus gnats.  Their thread is collectible however.
+- Added biped worm lizard.  Based on burrowing creature of the same name.  Giant version too.
+- Added the spotted salamander.  Hunts vermin, slightly bigger than cat, meant to test cat alternatives.
+- Added xelhua bullfrog.  The normal base version is standard giant size, the giant version is 1.75 million size.
+- Added rotweed salamander.  normal version is dog sized, giant is 400+k.  Both can hide in ambush
+- Added Amphis, a 2 headed fowl slighly smaller than a raccon.  Deliberately not great at meat farming or egg farming, but worth 3x value.
+
+

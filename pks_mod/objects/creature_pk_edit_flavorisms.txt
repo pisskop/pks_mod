@@ -21,15 +21,89 @@ creature_pk_edit_flavorisms
 
 
 *******************
+***Penetrate Power****
+-vermin can want to eat your food.  Some vermin can nibble through, dig into, or get around your barrels and pots into your food.  This is reflected in penetrate power.  In vanilla, rats have 2 penetrate power-
+-as I understand it, the game rolls a random number for a container.  0-100 for metal, 0-95 for wood, 0-90 for cloth.  If the critter's penetrate power is greater than the number rolled, it gets in and eats at the food.-
+
+
+[SELECT_CREATURE:RAT]
+	[CV_CONVERT_TAG]
+		[CVCT_MASTER:PENETRATEPOWER]
+		[CVCT_TARGET:2]
+		[CVCT_REPLACEMENT:3]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:RAT_DEMON]
+	[CV_CONVERT_TAG]
+		[CVCT_MASTER:PENETRATEPOWER]
+		[CVCT_TARGET:2]
+		[CVCT_REPLACEMENT:5]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+-WAMBLER_FLUFFY-			-has PENETRATEPOWER 1-
+-HAMSTER-					-has PENETRATEPOWER 2-
+-ROACH_LARGE-				-has PENETRATEPOWER 2-
+-LIZARD-					-has PENETRATEPOWER 1-
+
+
+[SELECT_CREATURE:LIZARD_RHINO_TWO_LEGGED]
+	[CV_CONVERT_TAG]
+		[CVCT_MASTER:PENETRATEPOWER]
+		[CVCT_TARGET:2]
+		[CVCT_REPLACEMENT:3]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+*******************
 ***flavor edits****
 -the purpose of these is to add non-combat flavor-
 
 
--creature:fairy doesnt have wings.  Considering I gave that to their giant fairy instead, Im just noting that this was on my list-		-a smarter modder would give the tiny ones wings and test if that retroactively affected the giant variation-
+[SELECT_CREATURE:BIRD_GOOSE]
+	[BIOME:TUNDRA]
 
-[SELECT_CREATURE:PLUMP_HELMET_MAN]		-plump helmet men can heal slowly-
+
+[SELECT_CREATURE:BIRD_SWAN]
+	[BIOME:TUNDRA]
+
+
+[SELECT_CREATURE:GOAT]						-these biome edits are probably more appropriate for this mod than the frequency mod.  Tundra in the game seems to represent a harsher version of the real world biome.-
+	[BIOME:TUNDRA]
+	
+
+[SELECT_CREATURE:GREMLIN]
+	[CV_CONVERT_TAG]
+		[CVCT_MASTER:NATURAL_SKILL]
+		[CVCT_TARGET:SNEAK:3]
+		[CVCT_REPLACEMENT:SNEAK:10]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+	[CAN_DO_INTERACTION:NINJA_HIDE]							-if it starts to flee, it will hide-
+		[CDI:ADV_NAME:Ambush]
+		[CDI:USAGE_HINT:CLEAN_SELF]
+		[CDI:USAGE_HINT:FLEEING]
+		[CDI:VERB:blink out:blinks out:NA]
+		[CDI:TARGET:A:SELF_ONLY]
+		[CDI:TARGET_RANGE:C:1]
+		[CDI:MAX_TARGET_NUMBER:C:1]
+		[CDI:WAIT_PERIOD:600]
+
+
+-creature:fairy doesnt have wings.  Considering I gave that to their giant fairy instead, Im just noting that this was on my list-		-applied modifications to base creatures do not 'retroactively' affect variations, both would need the modification-
+
+
+[SELECT_CREATURE:CAVE_BLOB]
+	[CV_REMOVE_TAG:ARENA_RESTRICTED]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+
+
+[SELECT_CREATURE:PLUMP_HELMET_MAN]		-plump helmet men is technically a 'construct man' but is organic and might even be 'alive' or 'natural', unlike its inorganic counterparts-
+	[CV_REMOVE_TAG:ARENA_RESTRICTED]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+	[OUTSIDER_CONTROLLABLE]
 	[SELECT_TISSUE:MUSHROOM]
-		[HEALING_RATE:200]				-100 is standard, 200 is ligaments/tendons-		-Im not 100% sure this is valid, gotta test next time I see PHM-
+		[HEALING_RATE:200]				-100 is standard, 200 is ligaments/tendons-		-this doest work, phm will heal very slowly-
 		[THICKENS_ON_ENERGY_STORAGE]
 		[THICKENS_ON_STRENGTH]
 		[SCARS]
@@ -40,6 +114,10 @@ creature_pk_edit_flavorisms
 
 
 [SELECT_CREATURE:FLY_ACORN]										-they arent hatable.  Weird, honestly.-
+	[VERMIN_HATEABLE]
+
+
+[SELECT_CREATURE:GRASSHOPPER]									-less weird that they arent hatable, still-
 	[VERMIN_HATEABLE]
 
 
@@ -75,16 +153,25 @@ creature_pk_edit_flavorisms
 
 [SELECT_CREATURE:KINGSNAKE]										-removing most syndromes from it might seem a little overkill, ig, its certainly less invasive than specifying immunities in all snake raws.  I doubt it will impact much regardless-
 	[CV_REMOVE_TAG:GENERAL_POISON]
+	[APPLY_CURRENT_CREATURE_VARIATION]
 
 
-[SELECT_CREATURE:KINGSNAKE_MAN]									-removing most syndromes from it might seem a little overkill, ig, its certainly less invasive than specifying immunities in all snake raws.  I doubt it will impact much regardless-
+[SELECT_CREATURE:KINGSNAKE_MAN]
 	[CV_REMOVE_TAG:GENERAL_POISON]
+	[APPLY_CURRENT_CREATURE_VARIATION]
+	[OUTSIDER_CONTROLLABLE]										-removing general poison class from this actually does make it a niche experience to use-
 
 
-[SELECT_CREATURE:GIANT_KINGSNAKE]								-removing most syndromes from it might seem a little overkill, ig, its certainly less invasive than specifying immunities in all snake raws.  I doubt it will impact much regardless-
+[SELECT_CREATURE:GIANT_KINGSNAKE]
 	[CV_REMOVE_TAG:GENERAL_POISON]
+	[APPLY_CURRENT_CREATURE_VARIATION]
 
 
+[SELECT_CREATURE:NAUTILUS_MAN]									-according to the wiki they neither have a brain nor this tag, so cant grasp and cant stand up-
+	[NO_THOUGHT_CENTER_FOR_MOVEMENT]
+
+
+***************
 ***FUR TRADE***
 -While Im not interested in making a cute-animal slaughterhouse simulator, I am interested in giving more depth to the world so long as its thematic-
 	-Fur trade in DF is probably extant but nowhere near as healthy as the real world, due to lower populations and the massive variety of opinions, isolated groups, isolated trading routes, etc-
@@ -100,7 +187,35 @@ creature_pk_edit_flavorisms
 		[MULTIPLY_VALUE:3]
 
 
+[SELECT_CREATURE:GIANT_FOX]
+	[SELECT_MATERIAL:HAIR]
+		[STATE_NAME:ALL_SOLID:fur]
+		[STATE_ADJ:ALL_SOLID:fur]
+		[MULTIPLY_VALUE:3]
+	[SELECT_MATERIAL:SKIN]
+		[MULTIPLY_VALUE:3]
+
+
+[SELECT_CREATURE:FOX_MAN]										-consider a personality bias to reflect their status as a valued hunting object-
+	[SELECT_MATERIAL:HAIR]
+		[STATE_NAME:ALL_SOLID:fur]
+		[STATE_ADJ:ALL_SOLID:fur]
+		[MULTIPLY_VALUE:3]
+	[SELECT_MATERIAL:SKIN]
+		[MULTIPLY_VALUE:3]
+
+
 [SELECT_CREATURE:HARP_SEAL]										-seal fur-
+	[SELECT_MATERIAL:SKIN]
+		[MULTIPLY_VALUE:2]
+
+
+[SELECT_CREATURE:HARP_SEAL_MAN]
+	[SELECT_MATERIAL:SKIN]
+		[MULTIPLY_VALUE:2]
+
+
+[SELECT_CREATURE:GIANT_HARP_SEAL]
 	[SELECT_MATERIAL:SKIN]
 		[MULTIPLY_VALUE:2]
 
@@ -114,10 +229,35 @@ creature_pk_edit_flavorisms
 		[MULTIPLY_VALUE:2]
 
 
--SELECT_CREATURE:GIANT_MINK-									-if the value multiplier carries over, great.  if not, I can add it-
+[SELECT_CREATURE:MINK_MAN]
+	[SELECT_MATERIAL:HAIR]
+		[STATE_NAME:ALL_SOLID:fur]
+		[STATE_ADJ:ALL_SOLID:fur]
+		[MULTIPLY_VALUE:2]
+	[SELECT_MATERIAL:SKIN]
+		[MULTIPLY_VALUE:2]
+
+
+[SELECT_CREATURE:GIANT_MINK]
+	[SELECT_MATERIAL:HAIR]
+		[STATE_NAME:ALL_SOLID:fur]
+		[STATE_ADJ:ALL_SOLID:fur]
+		[MULTIPLY_VALUE:2]
+	[SELECT_MATERIAL:SKIN]
+		[MULTIPLY_VALUE:2]
 
 
 [SELECT_CREATURE:BEAVER]										-beaver pelt-
+	[SELECT_MATERIAL:SKIN]
+		[MULTIPLY_VALUE:2]
+
+
+[SELECT_CREATURE:BEAVER_MAN]
+	[SELECT_MATERIAL:SKIN]
+		[MULTIPLY_VALUE:2]
+
+
+[SELECT_CREATURE:GIANT_BEAVER]
 	[SELECT_MATERIAL:SKIN]
 		[MULTIPLY_VALUE:2]
 
